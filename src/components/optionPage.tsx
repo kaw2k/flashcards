@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import React from 'react'
-import { SessionOptions } from 'src/helpers/generateQuiz'
+import { SessionOptions } from 'src/helpers/generateSession'
 import { useForm } from 'src/helpers/useForm'
 import { DATABASE } from 'src/models/state'
 import VersesIndex from 'src/pages/verses'
@@ -67,8 +67,8 @@ export const OptionPage: React.FC<{
               onChange={setForm('type')}
               options={[
                 { label: 'learn', value: 'learn' },
-                { label: 'quiz', value: 'quiz' },
                 { label: 'practice', value: 'practice' },
+                { label: 'quiz', value: 'quiz' },
               ]}
             />
           </div>

@@ -5,8 +5,16 @@ import { Center } from 'src/components/every-layout/center'
 import { Stack } from 'src/components/every-layout/stack'
 import { Navigation } from 'src/components/navigation'
 import { OptionPage } from 'src/components/optionPage'
+import { Quiz } from 'src/components/quiz'
+import { generateSession, Session } from 'src/helpers/generateSession'
 
 const Home: NextPage = () => {
+  const [session, setSession] = React.useState<Session | null>(null)
+
+  if (session) {
+    return <Quiz session={session} onDone={() => setSession(null)} />
+  }
+
   return (
     <Box>
       <Stack>
@@ -14,7 +22,11 @@ const Home: NextPage = () => {
         <Center component="h1" andText>
           Gita Verses
         </Center>
-        <OptionPage onDone={(form) => console.log(form)} />
+        <OptionPage
+          onDone={(sessionOptions) =>
+            setSession(generateSession(sessionOptions))
+          }
+        />
       </Stack>
     </Box>
   )

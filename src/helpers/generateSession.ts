@@ -1,5 +1,5 @@
 import { Flashcard } from 'src/types/flashcards'
-import { verseTitlePartial } from 'src/types/verse'
+import { verseTitleFull } from 'src/types/verse'
 import { shuffle } from './shuffle'
 
 export interface SessionOptions {
@@ -18,7 +18,7 @@ export type Session = {
   }
 }[]
 
-export function generateQuiz(session: SessionOptions): Session {
+export function generateSession(session: SessionOptions): Session {
   let cards = session.selectedCards.slice()
   if (session.order === 'book-order') {
     cards.sort((a, b) => a.verse.meta.order - b.verse.meta.order)
@@ -35,11 +35,11 @@ export function generateQuiz(session: SessionOptions): Session {
     const variant = session.variant === 'random' ? options[0] : session.variant
 
     if (variant === 'english') return verse.translation
-    if (variant === 'note') return shuffle(notes)[0] || verseTitlePartial(verse)
+    if (variant === 'note') return shuffle(notes)[0] || verseTitleFull(verse)
     if (variant === 'sanskrit') return verse.translation
-    if (variant === 'verse-number') return verseTitlePartial(verse)
+    if (variant === 'verse-number') return verseTitleFull(verse)
 
-    return verseTitlePartial(verse)
+    return verseTitleFull(verse)
   }
 
   return cards.map((card) => ({
