@@ -1,11 +1,7 @@
 import Cors from 'micro-cors'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { handleHttpError, validate } from 'src/helpers/apiHelpers'
-import {
-  adminCollectionAll,
-  adminCollectionQuery,
-  COLLECTIONS,
-} from 'src/helpers/firebase'
+import { adminCollectionQuery, COLLECTIONS } from 'src/helpers/firebase'
 import { HttpError } from 'src/helpers/httpError'
 import { Email } from 'src/types/email'
 import { Flashcard } from 'src/types/flashcards'
