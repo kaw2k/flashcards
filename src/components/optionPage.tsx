@@ -59,7 +59,7 @@ export const OptionPage: React.FC<{
       }}>
       <Stack>
         <Switcher>
-          <div>
+          {/* <div>
             <strong>Type:</strong>
             <Radio
               name="type"
@@ -71,7 +71,7 @@ export const OptionPage: React.FC<{
                 { label: 'quiz', value: 'quiz' },
               ]}
             />
-          </div>
+          </div> */}
           <div>
             <strong>Order:</strong>
             <Radio
@@ -79,10 +79,10 @@ export const OptionPage: React.FC<{
               onChange={setForm('order')}
               value={form.order}
               options={[
-                { label: 'random', value: 'random' },
-                { label: 'chronological', value: 'chronological' },
-                { label: 'book-order', value: 'book-order' },
-                { label: 'proficency', value: 'proficency' },
+                { label: 'Random', value: 'random' },
+                { label: 'Book Order', value: 'book-order' },
+                { label: 'Chronological', value: 'chronological' },
+                // { label: 'proficency', value: 'proficency' },
               ]}
             />
           </div>
@@ -93,11 +93,11 @@ export const OptionPage: React.FC<{
               value={form.variant}
               onChange={setForm('variant')}
               options={[
-                { label: 'random', value: 'random' },
-                { label: 'verse-number', value: 'verse-number' },
-                { label: 'note', value: 'note' },
-                { label: 'sanskrit', value: 'sanskrit' },
-                { label: 'english', value: 'english' },
+                { label: 'Random', value: 'random' },
+                { label: 'Verse Number', value: 'verse-number' },
+                { label: 'Note', value: 'note' },
+                { label: 'Sanskrit', value: 'sanskrit' },
+                { label: 'English', value: 'english' },
               ]}
             />
           </div>
@@ -109,8 +109,8 @@ export const OptionPage: React.FC<{
               value={form.cards}
               onChange={setForm('cards')}
               options={[
-                { label: 'all', value: 'all' },
-                { label: 'partial', value: 'partial' },
+                { label: 'All', value: 'all' },
+                { label: 'Partial', value: 'partial' },
               ]}
             />
           </div>

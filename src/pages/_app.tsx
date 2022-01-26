@@ -71,24 +71,23 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
 
         button,
+        label,
+        input[type='radio'] {
+          cursor: pointer;
+        }
+
+        button,
         input {
           border: 1px solid var(--black);
           border-radius: 5px;
-          padding: 3px 8px;
+          padding: 5px 10px;
           background-color: transparent;
         }
 
-        textarea {
-          -webkit-appearance: none;
-          display: block;
-          width: 100%;
-          padding: 3px 8px;
-          border: 1px solid var(--black);
-          border-radius: 5px;
-          font-size: inherit;
-          outline: none;
-          resize: none;
-          font-family: inherit;
+        button:hover,
+        button:active {
+          background-color: var(--black);
+          color: white;
         }
 
         input {

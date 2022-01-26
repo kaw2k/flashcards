@@ -6,7 +6,6 @@ interface CoverProps {
   space?: number
   centered?: string
   minHeight?: string
-  noPad?: boolean
 }
 
 export const Cover: React.SFC<CoverProps> = ({
@@ -15,7 +14,6 @@ export const Cover: React.SFC<CoverProps> = ({
   space = 1,
   centered = '.cover-primary',
   minHeight = '100vh',
-  noPad = false,
 }) => {
   const Component = component as any
   return (
@@ -27,17 +25,15 @@ export const Cover: React.SFC<CoverProps> = ({
           display: flex;
           flex-direction: column;
           min-height: ${minHeight};
-          ${!noPad && `padding-left: ${space}rem;`}
-          ${!noPad && `padding-right: ${space}rem;`}
-          ${!noPad &&
-          `padding-top: max(${space}rem, env(safe-area-inset-top));`}
-          ${!noPad &&
-          `padding-bottom: max(${space}rem, env(safe-area-inset-bottom));`}
+          padding-left: ${space}rem;
+          padding-right: ${space}rem;
+          padding-top: max(${space}rem, env(safe-area-inset-top));
+          padding-bottom: max(${space}rem, env(safe-area-inset-bottom));
         }
 
         .cover > :global(*) {
-          ${!noPad && `margin-top: ${space}rem;`}
-          ${!noPad && `margin-bottom: ${space}rem;`}
+          margin-top: ${space}rem;
+          margin-bottom: ${space}rem;
         }
 
         .cover > :global(:first-child:not(${centered})) {
