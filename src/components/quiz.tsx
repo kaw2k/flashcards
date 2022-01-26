@@ -14,11 +14,11 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
   const currentPrompt = prompts[0]
 
   function next() {
-    window.scrollTo(0, 0)
     setPrompts(prompts.slice(1))
   }
 
   React.useEffect(() => {
+    window.scrollTo(0, 0)
     if (!currentPrompt) onDone()
   }, [currentPrompt])
 
