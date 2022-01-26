@@ -27,7 +27,12 @@ export const Cover: React.SFC<CoverProps> = ({
           display: flex;
           flex-direction: column;
           min-height: ${minHeight};
-          ${!noPad && `padding: ${space}rem;`}
+          ${!noPad && `padding-left: ${space}rem;`}
+          ${!noPad && `padding-right: ${space}rem;`}
+          ${!noPad &&
+          `padding-top: max(${space}rem, env(safe-area-inset-top));`}
+          ${!noPad &&
+          `padding-bottom: max(${space}rem, env(safe-area-inset-bottom));`}
         }
 
         .cover > :global(*) {
