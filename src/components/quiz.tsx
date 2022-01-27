@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { Session } from 'src/helpers/generateSession'
 import { verseTitleFull } from 'src/types/verse'
@@ -33,8 +34,17 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
           </Center>
         </CoverPrimary>
 
-        <Center component="em" andText>
-          scroll for answers
+        <Center>
+          <button
+            className="wrapper"
+            onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
+            <Image
+              alt="scroll to view answer"
+              src="/icons/expand_more.svg"
+              height={40}
+              width={40}
+            />
+          </button>
         </Center>
       </Cover>
 
