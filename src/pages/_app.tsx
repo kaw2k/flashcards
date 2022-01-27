@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
 
         html {
-          font-size: 20px;
+          font-size: 24px;
           line-height: 1.5;
           color: var(--black);
         }
@@ -88,6 +88,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         button:hover,
         button:active {
           background-color: var(--blackTransparent);
+        }
+
+        button.wrapper {
+          border: none;
+          background: transparent;
         }
 
         input {
