@@ -38,6 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           --s5: calc(var(--s4) * var(--ratio));
 
           --black: #333;
+          --blackTransparent: #3332;
         }
 
         * {
@@ -86,8 +87,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         button:hover,
         button:active {
-          background-color: var(--black);
-          color: white;
+          background-color: var(--blackTransparent);
         }
 
         input {
