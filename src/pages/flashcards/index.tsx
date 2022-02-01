@@ -36,16 +36,13 @@ const FlashcardCard: React.FC<{
 }> = ({ flashcard }) => {
   return (
     <div className="root">
-      <Box key={flashcard.id}>
-        <Stack>
-          <strong>{verseTitleFull(flashcard.verse)}</strong>
-          <Cluster justify="flex-end">
-            <Link href={`/flashcards/${flashcard.id}`}>
-              <a>view</a>
-            </Link>
-          </Cluster>
-        </Stack>
-      </Box>
+      <Link href={`/flashcards/${flashcard.id}`}>
+        <a>
+          <Box>
+            <strong>{verseTitleFull(flashcard.verse)}</strong>
+          </Box>
+        </a>
+      </Link>
 
       <style jsx>{`
         .root {
@@ -55,9 +52,6 @@ const FlashcardCard: React.FC<{
 
         strong {
           display: block;
-        }
-        p {
-          white-space: pre-wrap;
         }
       `}</style>
     </div>
