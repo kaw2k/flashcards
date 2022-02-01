@@ -3,6 +3,7 @@ import React from 'react'
 import { Box } from 'src/components/every-layout/box'
 import { Center } from 'src/components/every-layout/center'
 import { Cluster } from 'src/components/every-layout/cluster'
+import { Grid } from 'src/components/every-layout/grid'
 import { Stack } from 'src/components/every-layout/stack'
 import { Navigation } from 'src/components/navigation'
 import { useForm } from 'src/helpers/useForm'
@@ -16,6 +17,7 @@ const VersesIndex: NextPage = () => {
   return (
     <Box>
       <Navigation />
+
       <Center component="h1" andText>
         Verses:
       </Center>
@@ -50,34 +52,34 @@ const VerseCard: React.FC<{ verse: Verse }> = ({ verse }) => {
   return (
     <div className="root">
       <Box>
-        <Stack>
-          <strong>
-            {verse.bookTitle}: {verse.meta.chapter}.{verse.meta.verse}
-          </strong>
-          <p>{verse.text}</p>
-          <p>{verse.translation}</p>
-
-          {!added && (
-            <Cluster justify="flex-end">
-              <button
-                onClick={() => {
-                  setAdded(true)
-                  DATABASE.flashcards.update({
-                    id: Id(),
-                    history: [],
-                    learningState: 'active',
-                    owner: DATABASE.user.email,
-                    verse: verse,
-                    notes: [],
-                    dateAdded: Date.now(),
-                  })
-                }}>
-                add
-              </button>
-            </Cluster>
-          )}
-        </Stack>
+        <Center andText>
+          <Stack>
+            <strong>
+              {verse.bookTitle}: {verse.meta.chapter}.{verse.meta.verse}
+            </strong>
+            <p>{verse.text}</p>
+            <p>{verse.translation}</p>
+          </Stack>
+        </Center>
       </Box>
+
+      {!added && (
+        <button
+          onClick={() => {
+            setAdded(true)
+            DATABASE.flashcards.update({
+              id: Id(),
+              history: [],
+              learningState: 'active',
+              owner: DATABASE.user.email,
+              verse: verse,
+              notes: [],
+              dateAdded: Date.now(),
+            })
+          }}>
+          add
+        </button>
+      )}
 
       <style jsx>{`
         .root {
@@ -90,6 +92,14 @@ const VerseCard: React.FC<{ verse: Verse }> = ({ verse }) => {
         }
         p {
           white-space: pre-wrap;
+        }
+        button {
+          display: block;
+          width: 100%;
+          border: none;
+          border-top: 1px solid var(--black);
+          border-radius: 0;
+          padding: var(--s-3) var(--s0);
         }
       `}</style>
     </div>

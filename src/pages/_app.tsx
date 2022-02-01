@@ -49,9 +49,21 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
 
         html {
-          font-size: 24px;
+          font-size: 16px;
           line-height: 1.5;
           color: var(--black);
+        }
+
+        @media (min-width: 600px) {
+          html {
+            font-size: 20px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          html {
+            font-size: 26px;
+          }
         }
 
         h1 {
@@ -69,6 +81,18 @@ function MyApp({ Component, pageProps }: AppProps) {
         h4 {
           font-size: var(--s1);
           font-weight: normal;
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: var(--black);
+        }
+
+        a:hover,
+        a:active,
+        a.active {
+          text-decoration: underline;
         }
 
         button,

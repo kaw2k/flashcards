@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import Link from 'next/link'
 import React from 'react'
 import { SessionOptions } from 'src/helpers/generateSession'
 import { useForm } from 'src/helpers/useForm'
@@ -44,6 +45,20 @@ export const OptionPage: React.FC<{
     cards: 'all',
     selectedCards: [],
   } as SessionOptions)
+
+  if (!DATABASE.flashcards.flashcards.length) {
+    return (
+      <Center intrinsic>
+        <p>
+          Add{' '}
+          <Link href="/verses">
+            <a>verses</a>
+          </Link>{' '}
+          to get started
+        </p>
+      </Center>
+    )
+  }
 
   return (
     <form

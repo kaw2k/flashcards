@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { Center } from 'src/components/every-layout/center'
 import { Cover, CoverPrimary } from 'src/components/every-layout/cover'
 import { Sidebar } from 'src/components/every-layout/sidebar'
 import { useForm } from 'src/helpers/useForm'
@@ -20,31 +21,35 @@ const Home: NextPage = () => {
   return (
     <Cover>
       <CoverPrimary>
-        <h1>Login</h1>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault()
-            if (form.email.trim().length) {
-              DATABASE.user.email = Email(form.email)
-              DATABASE.init().then(() => {
-                router.push('/')
-              })
-            }
-          }}>
-          <Sidebar side="right" noStretch="flex-end">
-            <div>
-              <label htmlFor="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="email"
-                value={form.email}
-                onChange={setForm('email')}
-              />
-            </div>
-            <button>login</button>
-          </Sidebar>
-        </form>
+        <Center andText component="h1">
+          Login
+        </Center>
+        <Center intrinsic>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault()
+              if (form.email.trim().length) {
+                DATABASE.user.email = Email(form.email)
+                DATABASE.init().then(() => {
+                  router.push('/')
+                })
+              }
+            }}>
+            <Sidebar side="right" noStretch="flex-end">
+              <div>
+                <label htmlFor="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email"
+                  value={form.email}
+                  onChange={setForm('email')}
+                />
+              </div>
+              <button>login</button>
+            </Sidebar>
+          </form>
+        </Center>
       </CoverPrimary>
     </Cover>
   )
