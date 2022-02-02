@@ -3,6 +3,7 @@ import cx from 'clsx'
 import { Space } from './every-layout-types'
 
 interface ClusterProps {
+  noWrap?: boolean
   className?: string
   /** The component the box renders as, defaults to div */
   component?: string
@@ -27,10 +28,11 @@ export const Cluster: React.SFC<ClusterProps> = ({
   align = 'center',
   justify = 'flex-start',
   className,
+  noWrap,
 }) => {
   const Component = component as any
   return (
-    <Component className={cx('cluster', className)}>
+    <Component className={cx('cluster', className, { noWrap })}>
       {children}
 
       <style jsx>{`
@@ -40,6 +42,10 @@ export const Cluster: React.SFC<ClusterProps> = ({
           gap: var(${space}, 1rem);
           justify-content: ${justify};
           align-items: ${align};
+        }
+
+        .noWrap {
+          flex-wrap: nowrap;
         }
       `}</style>
     </Component>

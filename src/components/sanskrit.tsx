@@ -1,8 +1,13 @@
 import React from 'react'
 
-export const Sanskrit: React.FC = ({ children }) => {
+export const Sanskrit: React.FC<{ component?: string }> = ({
+  children,
+  component = 'div',
+}) => {
+  const Component = component as any
+
   return (
-    <div className="root">
+    <Component className="root">
       {children}
       <style jsx>{`
         .root {
@@ -10,6 +15,6 @@ export const Sanskrit: React.FC = ({ children }) => {
           font-style: italic;
         }
       `}</style>
-    </div>
+    </Component>
   )
 }

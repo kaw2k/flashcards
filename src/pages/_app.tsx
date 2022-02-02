@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { DATABASE } from 'src/models/state'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState(true)
@@ -20,6 +21,29 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div>
+      <Head>
+        <link rel="apple-touch-icon" href="/logo-192.png"></link>
+        <link rel="icon" sizes="192x192" href="/logo-192.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+
+        <title>Gita Cards</title>
+
+        <meta charSet="utf-8" />
+        <meta name="theme-color" content="#ccc" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+      </Head>
+
       {loading ? <div>loading</div> : <Component {...pageProps} />}
 
       <style jsx global>{`
@@ -39,6 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
           --black: #333;
           --blackTransparent: #3332;
+          --grayLight: #aaab;
         }
 
         * {
@@ -52,6 +77,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           font-size: 16px;
           line-height: 1.5;
           color: var(--black);
+          background-color: #eee;
         }
 
         @media (min-width: 600px) {
@@ -66,19 +92,23 @@ function MyApp({ Component, pageProps }: AppProps) {
           }
         }
 
-        h1 {
+        h1,
+        .h1 {
           font-size: var(--s4);
           font-weight: normal;
         }
-        h2 {
+        h2,
+        .h2 {
           font-size: var(--s3);
           font-weight: normal;
         }
-        h3 {
+        h3,
+        .h3 {
           font-size: var(--s2);
           font-weight: normal;
         }
-        h4 {
+        h4,
+        .h4 {
           font-size: var(--s1);
           font-weight: normal;
         }
@@ -107,6 +137,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           border-radius: 5px;
           padding: 5px 10px;
           background-color: transparent;
+          color: var(--black);
         }
 
         button:hover,

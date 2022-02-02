@@ -69,7 +69,7 @@ export default function FlashcardDetailView() {
           }}>
           <Sidebar side="right">
             <input
-              placeholder="..."
+              placeholder="add a note..."
               onChange={setForm('notes')}
               value={form.notes}
             />

@@ -1,10 +1,12 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { Session } from 'src/helpers/generateSession'
 import { verseTitleFull } from 'src/types/verse'
 import { Center } from './every-layout/center'
+import { Cluster } from './every-layout/cluster'
 import { Cover, CoverPrimary } from './every-layout/cover'
 import { Stack } from './every-layout/stack'
+import { Icon } from './icon'
 import { Sanskrit } from './sanskrit'
 
 export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
@@ -29,23 +31,30 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
     <>
       <Cover>
         <CoverPrimary>
-          <Center andText component="h1">
+          <Center andText component="h2">
             {currentPrompt.prompt.title}
           </Center>
         </CoverPrimary>
 
-        <Center>
-          <button
-            className="wrapper"
-            onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
-            <Image
-              alt="scroll to view answer"
-              src="/icons/expand_more.svg"
-              height={40}
-              width={40}
-            />
+        <Cluster justify="space-around">
+          <button className="wrapper icon" onClick={onDone}>
+            <Icon color="var(--grayLight)" icon="home" />
           </button>
-        </Center>
+          <button
+            className="wrapper icon"
+            onClick={() =>
+              window.scrollTo({
+                left: 0,
+                top: document.body.scrollHeight,
+                behavior: 'smooth',
+              })
+            }>
+            <Icon color="var(--grayLight)" icon="expand_more" />
+          </button>
+          <button className="wrapper icon" onClick={next}>
+            <Icon color="var(--grayLight)" icon="chevron_right" />
+          </button>
+        </Cluster>
       </Cover>
 
       <Cover>
@@ -59,8 +68,24 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
           </Center>
         </CoverPrimary>
 
-        <button onClick={next}>next</button>
+        <Cluster justify="space-around">
+          <button className="wrapper icon" onClick={next}>
+            <Icon color="var(--grayLight)" icon="chevron_right" />
+          </button>
+        </Cluster>
       </Cover>
+      <style jsx>{`
+        .icon {
+          border: 1px solid var(--grayLight);
+          border-radius: 50%;
+          width: calc(3 * var(--s0));
+          height: calc(3 * var(--s0));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+        }
+      `}</style>
     </>
   )
 }

@@ -28,7 +28,10 @@ export const Cover: React.SFC<CoverProps> = ({
           padding-left: ${space}rem;
           padding-right: ${space}rem;
           padding-top: max(${space}rem, env(safe-area-inset-top));
-          padding-bottom: max(${space}rem, env(safe-area-inset-bottom));
+          padding-bottom: max(
+            ${space}rem,
+            calc(2rem + env(safe-area-inset-bottom))
+          );
         }
 
         .cover > :global(*) {

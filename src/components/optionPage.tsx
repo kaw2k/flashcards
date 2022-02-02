@@ -73,7 +73,7 @@ export const OptionPage: React.FC<{
         }
       }}>
       <Stack>
-        <Switcher>
+        <Switcher threshold="400px">
           {/* <div>
             <strong>Type:</strong>
             <Radio
