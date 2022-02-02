@@ -1,9 +1,10 @@
 import * as React from 'react'
 import cx from 'clsx'
+import { adjustedSpace, Space } from './every-layout-types'
 
 interface CoverProps {
   component?: string
-  space?: number
+  space?: Space
   centered?: string
   minHeight?: string
 }
@@ -11,11 +12,13 @@ interface CoverProps {
 export const Cover: React.SFC<CoverProps> = ({
   component = 'div',
   children,
-  space = 1,
+  space = '--s2',
   centered = '.cover-primary',
   minHeight = '100vh',
 }) => {
   const Component = component as any
+  const adjusted = adjustedSpace(space)
+
   return (
     <Component className={cx('cover', {})}>
       {children}
@@ -25,18 +28,18 @@ export const Cover: React.SFC<CoverProps> = ({
           display: flex;
           flex-direction: column;
           min-height: ${minHeight};
-          padding-left: ${space}rem;
-          padding-right: ${space}rem;
-          padding-top: max(${space}rem, env(safe-area-inset-top));
+          padding-left: ${adjusted};
+          padding-right: ${adjusted};
+          padding-top: max(${adjusted}, env(safe-area-inset-top));
           padding-bottom: max(
-            ${space}rem,
-            calc(2rem + env(safe-area-inset-bottom))
+            ${adjusted},
+            calc(${adjusted} + env(safe-area-inset-bottom))
           );
         }
 
         .cover > :global(*) {
-          margin-top: ${space}rem;
-          margin-bottom: ${space}rem;
+          margin-top: ${adjusted};
+          margin-bottom: ${adjusted};
         }
 
         .cover > :global(:first-child:not(${centered})) {

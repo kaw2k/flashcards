@@ -1109,6 +1109,7 @@ export type Icons =
   | 'play_circle_outline'
   | 'play_disabled'
   | 'play_for_work'
+  | 'play_lesson'
   | 'playlist_add'
   | 'playlist_add_check'
   | 'playlist_play'

@@ -1,10 +1,24 @@
+import { Icons } from 'src/components/icon'
 import { Flashcard } from 'src/types/flashcards'
 import { verseTitleFull } from 'src/types/verse'
 import { shuffle } from './shuffle'
 
+export const VariantOptions: {
+  value: string
+  label: string
+  icon: Icons
+}[] = [
+  { value: 'verse-number', label: 'Verse Number', icon: 'tag' },
+  { value: 'note', label: 'Note', icon: 'sticky_note_2' },
+  { value: 'sanskrit', label: 'Sanskrit', icon: 'translate' },
+  { value: 'english', label: 'English', icon: 'title' },
+]
+
+type VariantOptions = typeof VariantOptions
+
 export interface SessionOptions {
   type: 'quiz' | 'practice' | 'learn'
-  variant: 'random' | 'verse-number' | 'note' | 'sanskrit' | 'english'
+  variant: VariantOptions
   order: 'book-order' | 'proficency' | 'random' | 'chronological'
   cards: 'all' | 'partial'
   selectedCards: Flashcard[]
@@ -31,12 +45,11 @@ export function generateSession(session: SessionOptions): Session {
   }
 
   const getTitle = ({ verse, notes }: Flashcard): string => {
-    const options = shuffle(['verse-number', 'note', 'sanskrit', 'english'])
-    const variant = session.variant === 'random' ? options[0] : session.variant
+    const variant = shuffle(session.variant.map((v) => v.value))[0]
 
     if (variant === 'english') return verse.translation
     if (variant === 'note') return shuffle(notes)[0] || verseTitleFull(verse)
-    if (variant === 'sanskrit') return verse.translation
+    if (variant === 'sanskrit') return verse.text.join('\n')
     if (variant === 'verse-number') return verseTitleFull(verse)
 
     return verseTitleFull(verse)

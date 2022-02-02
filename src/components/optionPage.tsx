@@ -1,12 +1,11 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import React from 'react'
-import { SessionOptions } from 'src/helpers/generateSession'
+import { SessionOptions, VariantOptions } from 'src/helpers/generateSession'
 import { useForm } from 'src/helpers/useForm'
 import { DATABASE } from 'src/models/state'
-import VersesIndex from 'src/pages/verses'
-import { Flashcard } from 'src/types/flashcards'
-import { Verse, verseTitlePartial } from 'src/types/verse'
+import { verseTitlePartial } from 'src/types/verse'
+import { Checkbox } from './checkbox'
 import { Box } from './every-layout/box'
 import { Center } from './every-layout/center'
 import { Grid } from './every-layout/grid'
@@ -14,33 +13,12 @@ import { Stack } from './every-layout/stack'
 import { Switcher } from './every-layout/switcher'
 import { Radio } from './radio'
 
-/*
-Order (asc and dec)
-- chronological
-- book order
-- proficency
-- random
-
-Modes
-- practice
-- quiz
-- learn
-
-Variants (for practice and quiz)
-- random (any of the bellow)
-- verse number
-- note
-- sanskrit
-- english
-
-*/
-
 export const OptionPage: React.FC<{
   onDone(options: SessionOptions): void
 }> = ({ onDone }) => {
   const [form, setForm] = useForm({
     type: 'learn',
-    variant: 'random',
+    variant: VariantOptions,
     order: 'random',
     cards: 'all',
     selectedCards: [],
@@ -88,44 +66,48 @@ export const OptionPage: React.FC<{
             />
           </div> */}
           <div>
-            <strong>Order:</strong>
+            <Center component="h3" intrinsic>
+              Order
+            </Center>
             <Radio
               name="order"
               onChange={setForm('order')}
               value={form.order}
               options={[
-                { label: 'Random', value: 'random' },
-                { label: 'Book Order', value: 'book-order' },
-                { label: 'Chronological', value: 'chronological' },
+                { label: 'Random', value: 'random', icon: 'shuffle' },
+                { label: 'Book Order', value: 'book-order', icon: 'sort' },
+                {
+                  label: 'Chronological',
+                  value: 'chronological',
+                  icon: 'calendar_today',
+                },
                 // { label: 'proficency', value: 'proficency' },
               ]}
             />
           </div>
           <div>
-            <strong>Variant:</strong>
-            <Radio
+            <Center component="h3" intrinsic>
+              Variant
+            </Center>
+            <Checkbox
               name="variant"
-              value={form.variant}
               onChange={setForm('variant')}
-              options={[
-                { label: 'Random', value: 'random' },
-                { label: 'Verse Number', value: 'verse-number' },
-                { label: 'Note', value: 'note' },
-                { label: 'Sanskrit', value: 'sanskrit' },
-                { label: 'English', value: 'english' },
-              ]}
+              options={VariantOptions}
+              value={form.variant}
             />
           </div>
 
           <div>
-            <strong>Flashcards:</strong>
+            <Center component="h3" intrinsic>
+              Flashcards
+            </Center>
             <Radio
               name="verses"
               value={form.cards}
               onChange={setForm('cards')}
               options={[
-                { label: 'All', value: 'all' },
-                { label: 'Partial', value: 'partial' },
+                { label: 'All', value: 'all', icon: 'done_all' },
+                { label: 'Partial', value: 'partial', icon: 'done' },
               ]}
             />
           </div>
@@ -187,7 +169,7 @@ export const OptionPage: React.FC<{
           border-radius: 5px;
         }
         .card.selected {
-          color: white;
+          color: var(--white);
           background-color: var(--black);
         }
       `}</style>

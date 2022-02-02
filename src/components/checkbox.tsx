@@ -5,14 +5,14 @@ import { Icon, Icons } from './icon'
 
 type Option = { value: string; label?: string; icon?: Icons }
 
-export const Radio: React.FC<{
+export const Checkbox: React.FC<{
   color?: string
   name: string
   options: Option[]
-  onChange?: (value: string) => void
+  onChange?: (options: Option[]) => void
   disabled?: boolean
-  value?: string
-  defaultValue?: string
+  value?: Option[]
+  defaultValue?: Option[]
 }> = ({
   name,
   disabled,
@@ -22,9 +22,19 @@ export const Radio: React.FC<{
   value,
   defaultValue,
 }) => {
-  const variables: any = {
-    '--color-primary': `var(${color})`,
+  const [state, setState] = React.useState(value || defaultValue || [])
+
+  function toggleState(option: Option) {
+    if (state.find((o) => o.value === option.value)) {
+      setState(state.filter((o) => o.value !== option.value))
+    } else {
+      setState(state.concat(option))
+    }
   }
+
+  React.useEffect(() => {
+    onChange(state)
+  }, [state])
 
   return (
     <Cluster space="--s-5" justify="center">
@@ -33,16 +43,25 @@ export const Radio: React.FC<{
           <input
             key={`radio-${option.value}-input`}
             id={`radio-${name}-${option.value}`}
-            type="radio"
+            type="checkbox"
             disabled={disabled}
             name={name}
             value={option.value}
-            checked={value != null ? value === option.value : undefined}
-            defaultChecked={
-              defaultValue != null ? defaultValue === option.value : undefined
+            checked={
+              value != null
+                ? !!value.find((o) => o.value === option.value)
+                : undefined
             }
-            onChange={(e) => onChange(option.value)}
-            onClick={(e) => !disabled && onChange(option.value)}
+            defaultChecked={
+              defaultValue != null
+                ? !!defaultValue.find((o) => o.value === option.value)
+                : undefined
+            }
+            onChange={(e) =>
+              toggleState(
+                options.find((o) => o.value === e.target.value) as Option
+              )
+            }
           />
           <label
             key={`radio-${option.value}-label`}

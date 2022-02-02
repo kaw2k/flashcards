@@ -64,6 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           --black: #333;
           --blackTransparent: #3332;
           --grayLight: #aaab;
+          --white: #fafafa;
         }
 
         * {
@@ -153,6 +154,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         input {
           display: block;
           width: 100%;
+          background-color: var(--white);
         }
 
         ul {

@@ -32,7 +32,7 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
       <Cover>
         <CoverPrimary>
           <Center andText component="h2">
-            {currentPrompt.prompt.title}
+            <span className="pre-wrap">{currentPrompt.prompt.title}</span>
           </Center>
         </CoverPrimary>
 
@@ -84,6 +84,10 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
           justify-content: center;
           align-items: center;
           font-size: 2em;
+        }
+
+        .pre-wrap {
+          white-space: pre-wrap;
         }
       `}</style>
     </>
