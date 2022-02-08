@@ -62,6 +62,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           --s5: calc(var(--s4) * var(--ratio));
 
           --black: #333;
+          --blackLight: #444;
           --blackTransparent: #3332;
           --grayLight: #aaab;
           --white: #fafafa;

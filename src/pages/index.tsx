@@ -74,8 +74,8 @@ const Home: NextPage = () => {
         <Navigation />
 
         <CoverPrimary>
-          <Stack>
-            <Switcher threshold="400px">
+          <Stack space="--s2">
+            <Switcher space="--s2" threshold="400px">
               {/* <div>
             <strong>Type:</strong>
             <Radio
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
             />
           </div> */}
               <div>
-                <Center component="h3" intrinsic>
+                <Center component="h2" intrinsic>
                   Order
                 </Center>
                 <Radio
@@ -99,9 +99,9 @@ const Home: NextPage = () => {
                   value={form.order}
                   options={[
                     { label: 'Random', value: 'random', icon: 'shuffle' },
-                    { label: 'Book Order', value: 'book-order', icon: 'sort' },
+                    { label: 'Book Order', value: 'book-order', icon: 'book' },
                     {
-                      label: 'Chronological',
+                      label: 'date',
                       value: 'chronological',
                       icon: 'calendar_today',
                     },
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                 />
               </div>
               <div>
-                <Center component="h3" intrinsic>
+                <Center component="h2" intrinsic>
                   Variant
                 </Center>
                 <Checkbox
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
               </div>
 
               <div>
-                <Center component="h3" intrinsic>
+                <Center component="h2" intrinsic>
                   Flashcards
                 </Center>
                 <Radio

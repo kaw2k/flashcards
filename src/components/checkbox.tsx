@@ -37,7 +37,7 @@ export const Checkbox: React.FC<{
   }, [state])
 
   return (
-    <Cluster space="--s-5" justify="center">
+    <Cluster justify="center">
       {options.map((option) => (
         <Cluster key={`radio-${option.value}`}>
           <input
@@ -66,10 +66,8 @@ export const Checkbox: React.FC<{
           <label
             key={`radio-${option.value}-label`}
             htmlFor={`radio-${name}-${option.value}`}>
-            <Cluster align="center" space="--s-5">
-              {'icon' in option && <Icon icon={option.icon} />}
-              <span>{option.label || option.value}</span>
-            </Cluster>
+            {'icon' in option && <Icon icon={option.icon} />}
+            <span className="text">{option.label || option.value}</span>
           </label>
         </Cluster>
       ))}
@@ -82,11 +80,27 @@ export const Checkbox: React.FC<{
         }
 
         label {
-          padding: var(--s-5) var(--s-2);
+          display: inline-flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
           border: 1px solid var(--grayLight);
-          border-radius: 5px;
+          border-radius: 50%;
+          width: 2em;
+          height: 2em;
+
           color: var(--grayLight);
           user-select: none;
+
+          font-size: 3em;
+        }
+
+        .text {
+          text-transform: uppercase;
+          font-size: 0.2em;
+          word-spacing: 5em;
         }
 
         input:checked + label {
@@ -98,3 +112,17 @@ export const Checkbox: React.FC<{
     </Cluster>
   )
 }
+
+// label {
+//   padding: var(--s-5) var(--s-2);
+//   border: 1px solid var(--grayLight);
+//   border-radius: 5px;
+//   color: var(--grayLight);
+//   user-select: none;
+// }
+
+// input:checked + label {
+//   background-color: var(--black);
+//   border-color: var(--black);
+//   color: var(--white);
+// }

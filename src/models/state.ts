@@ -127,7 +127,7 @@ export const DATABASE = {
 
   async init() {
     this.user.init()
-    this.flashcards.init(this.user.email)
+    await this.flashcards.init(this.user.email)
   },
 
   logout() {
