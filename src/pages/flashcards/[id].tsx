@@ -11,6 +11,7 @@ import { useForm } from 'src/helpers/useForm'
 import { Cluster } from 'src/components/every-layout/cluster'
 import { Flashcard } from 'src/types/flashcards'
 import { Sidebar } from 'src/components/every-layout/sidebar'
+import { Icon } from 'src/components/icon'
 
 export default function FlashcardDetailView() {
   const router = useRouter()
@@ -35,13 +36,6 @@ export default function FlashcardDetailView() {
         <Center andText component="h1">
           {verseTitleFull(flashcard.verse)}
         </Center>
-        <button
-          onClick={() => {
-            DATABASE.flashcards.remove(flashcard)
-            router.push('/flashcards')
-          }}>
-          remove
-        </button>
 
         <Center andText>
           <Stack>
@@ -84,6 +78,7 @@ export default function FlashcardDetailView() {
                 <p>{note}</p>
                 <button
                   type="button"
+                  className="icon-button"
                   onClick={() => {
                     const nextFlashcard: Flashcard = {
                       ...flashcard,
@@ -93,13 +88,32 @@ export default function FlashcardDetailView() {
                     DATABASE.flashcards.update(nextFlashcard)
                     setFlashcard(nextFlashcard)
                   }}>
-                  remove
+                  <Icon icon="clear" />
                 </button>
               </Cluster>
             ))}
           </Stack>
         )}
+        <button
+          onClick={() => {
+            DATABASE.flashcards.remove(flashcard)
+            router.push('/flashcards')
+          }}>
+          remove flashcard
+        </button>
       </Stack>
+
+      <style jsx>{`
+        .icon-button {
+          border: none;
+          border-radius: 50%;
+          width: 2em;
+          height: 2em;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+        }
+      `}</style>
     </Box>
   )
 }

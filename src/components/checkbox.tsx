@@ -112,17 +112,3 @@ export const Checkbox: React.FC<{
     </Cluster>
   )
 }
-
-// label {
-//   padding: var(--s-5) var(--s-2);
-//   border: 1px solid var(--grayLight);
-//   border-radius: 5px;
-//   color: var(--grayLight);
-//   user-select: none;
-// }
-
-// input:checked + label {
-//   background-color: var(--black);
-//   border-color: var(--black);
-//   color: var(--white);
-// }
