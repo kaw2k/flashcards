@@ -63,6 +63,7 @@ export const Practice: React.FC<{ session: Session; onDone(): void }> = ({
             <Stack>
               <h2>{verseTitleFull(currentPrompt.flashcard.verse)}</h2>
               <Sanskrit>{currentPrompt.flashcard.verse.text}</Sanskrit>
+              <Sanskrit>{currentPrompt.flashcard.verse.synonyms}</Sanskrit>
               <p>{currentPrompt.flashcard.verse.translation}</p>
             </Stack>
           </Center>
