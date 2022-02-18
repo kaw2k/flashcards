@@ -1,6 +1,10 @@
 import clsx from 'clsx'
 import Link from 'next/link'
-import { SessionOptions, VariantOptions } from 'src/helpers/generateSession'
+import {
+  DefaultVariantOptions,
+  SessionOptions,
+  VariantOptions,
+} from 'src/helpers/generateSession'
 import { useForm } from 'src/helpers/useForm'
 import { DATABASE } from 'src/models/state'
 import { verseTitlePartial } from 'src/types/verse'
@@ -13,6 +17,7 @@ import { Cover, CoverPrimary } from 'src/components/every-layout/cover'
 import { Stack } from 'src/components/every-layout/stack'
 import { Navigation } from 'src/components/navigation'
 import { Quiz } from 'src/components/quiz'
+import { Practice } from 'src/components/practice'
 import { generateSession, Session } from 'src/helpers/generateSession'
 import { Switcher } from 'src/components/every-layout/switcher'
 import { Grid } from 'src/components/every-layout/grid'
@@ -24,7 +29,7 @@ const Home: NextPage = () => {
 
   const [form, setForm] = useForm({
     type: 'learn',
-    variant: VariantOptions,
+    variant: DefaultVariantOptions,
     order: 'random',
     cards: 'all',
     selectedCards: [],
@@ -50,7 +55,11 @@ const Home: NextPage = () => {
   }
 
   if (session) {
-    return <Quiz session={session} onDone={() => setSession(null)} />
+    return form.order === 'proficency' ? (
+      <Quiz session={session} onDone={() => setSession(null)} />
+    ) : (
+      <Practice session={session} onDone={() => setSession(null)} />
+    )
   }
 
   return (
@@ -76,19 +85,6 @@ const Home: NextPage = () => {
         <CoverPrimary>
           <Stack space="--s2">
             <Switcher space="--s2" threshold="400px">
-              {/* <div>
-            <strong>Type:</strong>
-            <Radio
-              name="type"
-              value={form.type}
-              onChange={setForm('type')}
-              options={[
-                { label: 'learn', value: 'learn' },
-                { label: 'practice', value: 'practice' },
-                { label: 'quiz', value: 'quiz' },
-              ]}
-            />
-          </div> */}
               <div>
                 <Center component="h2" intrinsic>
                   Order
@@ -99,13 +95,17 @@ const Home: NextPage = () => {
                   value={form.order}
                   options={[
                     { label: 'Random', value: 'random', icon: 'shuffle' },
+                    {
+                      label: 'proficency',
+                      value: 'proficency',
+                      icon: 'psychology',
+                    },
                     { label: 'Book Order', value: 'book-order', icon: 'book' },
                     {
                       label: 'date',
                       value: 'chronological',
                       icon: 'calendar_today',
                     },
-                    // { label: 'proficency', value: 'proficency' },
                   ]}
                 />
               </div>
@@ -121,23 +121,25 @@ const Home: NextPage = () => {
                 />
               </div>
 
-              <div>
-                <Center component="h2" intrinsic>
-                  Flashcards
-                </Center>
-                <Radio
-                  name="verses"
-                  value={form.cards}
-                  onChange={setForm('cards')}
-                  options={[
-                    { label: 'All', value: 'all', icon: 'done_all' },
-                    { label: 'Partial', value: 'partial', icon: 'done' },
-                  ]}
-                />
-              </div>
+              {form.order !== 'proficency' && (
+                <div>
+                  <Center component="h2" intrinsic>
+                    Flashcards
+                  </Center>
+                  <Radio
+                    name="verses"
+                    value={form.cards}
+                    onChange={setForm('cards')}
+                    options={[
+                      { label: 'All', value: 'all', icon: 'done_all' },
+                      { label: 'Partial', value: 'partial', icon: 'done' },
+                    ]}
+                  />
+                </div>
+              )}
             </Switcher>
 
-            {form.cards === 'partial' && (
+            {form.order !== 'proficency' && form.cards === 'partial' && (
               <Grid>
                 {DATABASE.flashcards.flashcards.map((flashcard) => {
                   const isSelected = form.selectedCards.find(

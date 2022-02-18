@@ -1,5 +1,6 @@
 import { Icons } from 'src/components/icon'
-import { Flashcard } from 'src/types/flashcards'
+import { DATABASE } from 'src/models/state'
+import { Flashcard, FlashcardSteps } from 'src/types/flashcards'
 import { verseTitleFull } from 'src/types/verse'
 import { shuffle } from './shuffle'
 
@@ -8,11 +9,17 @@ export const VariantOptions: {
   label: string
   icon: Icons
 }[] = [
-  { value: 'verse-number', label: 'Verse Number', icon: 'tag' },
-  { value: 'note', label: 'Note', icon: 'sticky_note_2' },
-  { value: 'sanskrit', label: 'Sanskrit', icon: 'translate' },
   { value: 'english', label: 'English', icon: 'title' },
+  { value: 'verse-number', label: 'Verse Number', icon: 'tag' },
+  { value: 'sanskrit', label: 'Sanskrit', icon: 'translate' },
+  { value: 'note', label: 'Note', icon: 'sticky_note_2' },
 ]
+
+export const DefaultVariantOptions: {
+  value: string
+  label: string
+  icon: Icons
+}[] = [{ value: 'english', label: 'English', icon: 'title' }]
 
 type VariantOptions = typeof VariantOptions
 
@@ -39,7 +46,7 @@ export function generateSession(session: SessionOptions): Session {
   } else if (session.order === 'chronological') {
     cards.sort((a, b) => a.dateAdded - b.dateAdded)
   } else if (session.order === 'proficency') {
-    // TODO: sort based on proficency
+    cards = generateQuizCards()
   } else {
     cards = shuffle(cards)
   }
@@ -61,4 +68,39 @@ export function generateSession(session: SessionOptions): Session {
       title: getTitle(card),
     },
   }))
+}
+
+// We always show all cards that are not in review
+// We only will show 1/4 to 1/2 of all review cards
+export function generateQuizCards(): Flashcard[] {
+  const cards = DATABASE.flashcards.flashcards.slice(0)
+
+  function filterCards(step: FlashcardSteps) {
+    return cards.filter((card) =>
+      step === FlashcardSteps.Initial
+        ? card.history[0]?.step === FlashcardSteps.Initial ||
+          !card.history.length
+        : card.history[0]?.step === step
+    )
+  }
+
+  const initialCards = filterCards(FlashcardSteps.Initial)
+  const betterCards = filterCards(FlashcardSteps.Better)
+  const greatCards = filterCards(FlashcardSteps.Great)
+  const reviewCards = filterCards(FlashcardSteps.Review)
+
+  const reviewCardsToShow = Math.max(2, Math.floor(0.33 * reviewCards.length))
+  reviewCards.sort(
+    (a, b) =>
+      (a.history[0].ease + Math.random()) &
+      (a.history[0].ease - b.history[0].ease + Math.random()) &
+      b.history[0].ease
+  )
+
+  return [
+    ...shuffle(initialCards),
+    ...shuffle(betterCards),
+    ...shuffle(greatCards),
+    ...reviewCards.slice(0, reviewCardsToShow),
+  ]
 }

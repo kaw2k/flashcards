@@ -1,11 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
 import { Session } from 'src/helpers/generateSession'
-import { DATABASE } from 'src/models/state'
-import {
-  FlashcardOptions,
-  FlashcardSteps,
-  progressCard,
-} from 'src/types/flashcards'
 import { verseTitleFull } from 'src/types/verse'
 import { Center } from './every-layout/center'
 import { Cluster } from './every-layout/cluster'
@@ -14,22 +9,14 @@ import { Stack } from './every-layout/stack'
 import { Icon } from './icon'
 import { Sanskrit } from './sanskrit'
 
-export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
+export const Practice: React.FC<{ session: Session; onDone(): void }> = ({
   session,
   onDone,
 }) => {
   const [prompts, setPrompts] = React.useState(session)
   const currentPrompt = prompts[0]
 
-  const next = (option: FlashcardOptions) => () => {
-    DATABASE.flashcards.update({
-      ...currentPrompt.flashcard,
-      history: [
-        progressCard(option, currentPrompt.flashcard.history[0]),
-        ...currentPrompt.flashcard.history,
-      ],
-    })
-
+  function next() {
     setPrompts(prompts.slice(1))
   }
 
@@ -50,6 +37,9 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
         </CoverPrimary>
 
         <Cluster justify="space-around">
+          <button className="wrapper icon" onClick={onDone}>
+            <Icon color="var(--grayLight)" icon="home" />
+          </button>
           <button
             className="wrapper icon"
             onClick={() =>
@@ -60,6 +50,9 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
               })
             }>
             <Icon color="var(--grayLight)" icon="expand_more" />
+          </button>
+          <button className="wrapper icon" onClick={next}>
+            <Icon color="var(--grayLight)" icon="chevron_right" />
           </button>
         </Cluster>
       </Cover>
@@ -76,17 +69,8 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
         </CoverPrimary>
 
         <Cluster justify="space-around">
-          <button className="option" onClick={next(FlashcardOptions.Again)}>
-            again
-          </button>
-          <button className="option" onClick={next(FlashcardOptions.Hard)}>
-            hard
-          </button>
-          <button className="option" onClick={next(FlashcardOptions.Good)}>
-            good
-          </button>
-          <button className="option" onClick={next(FlashcardOptions.Easy)}>
-            easy
+          <button className="wrapper icon" onClick={next}>
+            <Icon color="var(--grayLight)" icon="chevron_right" />
           </button>
         </Cluster>
       </Cover>
@@ -100,12 +84,6 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
           justify-content: center;
           align-items: center;
           font-size: 2em;
-        }
-
-        .option {
-          border: 1px solid var(--grayLight);
-          color: var(--grayLight);
-          border-radius: 5px;
         }
 
         .pre-wrap {
