@@ -24,7 +24,6 @@ const FlashcardsIndex: NextPage = () => {
     const flashcard: Flashcard = {
       id: Id(),
       history: [],
-      learningState: 'active',
       owner: DATABASE.user.email,
       verse: verse,
       notes: [],
