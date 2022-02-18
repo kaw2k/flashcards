@@ -70,7 +70,6 @@ const VerseCard: React.FC<{ verse: Verse }> = ({ verse }) => {
             DATABASE.flashcards.update({
               id: Id(),
               history: [],
-              learningState: 'active',
               owner: DATABASE.user.email,
               verse: verse,
               notes: [],
