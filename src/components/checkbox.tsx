@@ -34,6 +34,7 @@ export const Checkbox: React.FC<{
 
   React.useEffect(() => {
     onChange(state)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state])
 
   return (

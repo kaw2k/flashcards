@@ -12,7 +12,7 @@ import { Icon } from 'src/components/icon'
 import { Navigation } from 'src/components/navigation'
 import { useForm } from 'src/helpers/useForm'
 import { DATABASE } from 'src/models/state'
-import { Flashcard } from 'src/types/flashcards'
+import { Flashcard, FlashcardSteps } from 'src/types/flashcards'
 import { Id } from 'src/types/id'
 import { Verse, verseTitlePartial } from 'src/types/verse'
 
@@ -26,6 +26,8 @@ const FlashcardsIndex: NextPage = () => {
       history: [],
       owner: DATABASE.user.email,
       verse: verse,
+      ease: 0,
+      step: FlashcardSteps.Initial,
       notes: [],
       dateAdded: Date.now(),
     }

@@ -13,6 +13,8 @@ export interface Flashcard {
   id: Id
   owner: Email
   verse: Verse
+  step: FlashcardSteps
+  ease: number
   history: FlashcardHistory[]
   notes: string[]
   dateAdded: number
@@ -62,10 +64,11 @@ function nextStep(currentStep: FlashcardSteps): FlashcardSteps {
 
 export function progressCard(
   option: FlashcardOptions,
-  history: FlashcardHistory = FlashcardHistoryDefault()
+  step: FlashcardSteps,
+  ease: number
 ): FlashcardHistory {
-  if (history.ease) {
-    const nextEase = history.ease * optionEaseValue(option)
+  if (ease) {
+    const nextEase = ease * optionEaseValue(option)
 
     if (option === FlashcardOptions.Again || nextEase < 0.75) {
       return {
@@ -98,7 +101,7 @@ export function progressCard(
       date: Date.now(),
       ease: 0,
       option,
-      step: history.step,
+      step: step,
     }
   }
 
@@ -107,7 +110,7 @@ export function progressCard(
       date: Date.now(),
       ease: 0,
       option,
-      step: nextStep(history.step),
+      step: nextStep(step),
     }
   }
 
@@ -120,5 +123,10 @@ export function progressCard(
     }
   }
 
-  return history
+  return {
+    date: Date.now(),
+    ease: ease,
+    option: option,
+    step: step,
+  }
 }

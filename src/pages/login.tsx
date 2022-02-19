@@ -16,6 +16,7 @@ const Home: NextPage = () => {
     if (DATABASE.user.email) {
       router.replace('/')
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

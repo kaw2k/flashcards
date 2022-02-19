@@ -25,7 +25,11 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
     DATABASE.flashcards.update({
       ...currentPrompt.flashcard,
       history: [
-        progressCard(option, currentPrompt.flashcard.history[0]),
+        progressCard(
+          option,
+          currentPrompt.flashcard.step || FlashcardSteps.Initial,
+          currentPrompt.flashcard.ease || 0
+        ),
         ...currentPrompt.flashcard.history,
       ],
     })
@@ -36,6 +40,7 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
   React.useEffect(() => {
     window.scrollTo(0, 0)
     if (!currentPrompt) onDone()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPrompt])
 
   if (!currentPrompt) return null

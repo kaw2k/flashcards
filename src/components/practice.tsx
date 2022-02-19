@@ -23,6 +23,7 @@ export const Practice: React.FC<{ session: Session; onDone(): void }> = ({
   React.useEffect(() => {
     window.scrollTo(0, 0)
     if (!currentPrompt) onDone()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPrompt])
 
   if (!currentPrompt) return null

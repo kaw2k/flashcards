@@ -25,6 +25,7 @@ export default function FlashcardDetailView() {
     if (!flashcard) {
       router.push('/flashcards')
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (!flashcard) return null

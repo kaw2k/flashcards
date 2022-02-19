@@ -78,9 +78,8 @@ export function generateQuizCards(): Flashcard[] {
   function filterCards(step: FlashcardSteps) {
     return cards.filter((card) =>
       step === FlashcardSteps.Initial
-        ? card.history[0]?.step === FlashcardSteps.Initial ||
-          !card.history.length
-        : card.history[0]?.step === step
+        ? card.step === FlashcardSteps.Initial || !card.step
+        : card.step === step
     )
   }
 
@@ -91,10 +90,8 @@ export function generateQuizCards(): Flashcard[] {
 
   const reviewCardsToShow = Math.max(2, Math.floor(0.33 * reviewCards.length))
   reviewCards.sort(
-    (a, b) =>
-      (a.history[0].ease + Math.random()) &
-      (a.history[0].ease - b.history[0].ease + Math.random()) &
-      b.history[0].ease
+    ({ ease: easeA = 0 }, { ease: easeB = 0 }) =>
+      easeA + Math.random() - (easeB + Math.random())
   )
 
   return [
