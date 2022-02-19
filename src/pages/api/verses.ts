@@ -7,7 +7,7 @@ import { Verse } from 'src/types/verse'
 
 import Fuse from 'fuse.js'
 
-const verses: Verse[] = [...bg.verses, ...sb.verses] as any
+const verses: Verse[] = [...bg.verses, ...(sb as any).verses] as any
 
 const fuseVerses = new Fuse(verses, {
   keys: ['id'],
