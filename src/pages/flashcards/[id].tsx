@@ -9,9 +9,11 @@ import { DATABASE } from 'src/models/state'
 import { verseTitleFull } from 'src/types/verse'
 import { useForm } from 'src/helpers/useForm'
 import { Cluster } from 'src/components/every-layout/cluster'
-import { Flashcard } from 'src/types/flashcards'
+import { Flashcard, FlashcardOptions } from 'src/types/flashcards'
 import { Sidebar } from 'src/components/every-layout/sidebar'
 import { Icon } from 'src/components/icon'
+import { getFullDate } from 'src/helpers/date'
+import clsx from 'clsx'
 
 export default function FlashcardDetailView() {
   const router = useRouter()
@@ -96,12 +98,23 @@ export default function FlashcardDetailView() {
           </Stack>
         )}
         <button
+          className="remove"
           onClick={() => {
             DATABASE.flashcards.remove(flashcard)
             router.push('/flashcards')
           }}>
           remove flashcard
         </button>
+
+        {!!flashcard.history.length && <h2>History:</h2>}
+        {flashcard.history.map((history, i) => (
+          <div className="history" key={history.date + i}>
+            <Cluster justify="space-between">
+              <time>{getFullDate(history.date)}</time>
+              <p className={clsx('option', history.option)}>{history.option}</p>
+            </Cluster>
+          </div>
+        ))}
       </Stack>
 
       <style jsx>{`
@@ -113,6 +126,40 @@ export default function FlashcardDetailView() {
           display: inline-flex;
           justify-content: center;
           align-items: center;
+        }
+
+        .remove {
+          color: red;
+          border-color: currentColor;
+        }
+
+        time {
+          font-weight: bold;
+        }
+
+        .option {
+          font-weight: bold;
+          color: var(--grayLight);
+          text-transform: uppercase;
+        }
+
+        .${FlashcardOptions.Hard} {
+          color: red;
+        }
+
+        .${FlashcardOptions.Good} {
+          color: orange;
+        }
+
+        .${FlashcardOptions.Easy} {
+          color: green;
+        }
+
+        .history {
+          padding: var(--s0);
+          border: 1px solid var(--grayLight);
+          border-radius: 5px;
+          background: var(--white);
         }
       `}</style>
     </Box>

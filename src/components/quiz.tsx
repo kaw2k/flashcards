@@ -109,9 +109,12 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
         }
 
         .option {
+          padding: var(--s-2) var(--s0);
           border: 1px solid var(--grayLight);
           color: var(--grayLight);
           border-radius: 5px;
+          text-transform: uppercase;
+          font-weight: bold;
         }
 
         .pre-wrap {
