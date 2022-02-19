@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import { DATABASE } from 'src/models/state'
 import Head from 'next/head'
+import { Cover, CoverPrimary } from 'src/components/every-layout/cover'
+import { Center } from 'src/components/every-layout/center'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState(true)
@@ -51,7 +53,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
 
-      {loading ? <div>loading</div> : <Component {...pageProps} />}
+      {loading ? (
+        <Cover>
+          <CoverPrimary>
+            <Center andText component="h2">
+              loading...
+            </Center>
+          </CoverPrimary>
+        </Cover>
+      ) : (
+        <Component {...pageProps} />
+      )}
 
       <style jsx global>{`
         :root {

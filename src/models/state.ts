@@ -7,26 +7,7 @@ import { FlashcardsRequest } from 'src/pages/api/flashcards'
 import { FlashcardsRequestPost } from 'src/pages/api/flashcards/[id]'
 import { Email } from 'src/types/email'
 import { Flashcard } from '../types/flashcards'
-
-import bg from 'src/bg.json'
-import sb from 'src/sb.json'
 import { Verse } from 'src/types/verse'
-import { Book } from 'src/types/book'
-
-import Fuse from 'fuse.js'
-
-const verses: Verse[] = [...bg.verses, ...sb.verses] as any
-const books: Book[] = [...bg.books, ...sb.books] as any
-
-const fuseVerses = new Fuse(verses, {
-  keys: ['id'],
-  isCaseSensitive: false,
-})
-
-const fuseBooks = new Fuse(books, {
-  keys: ['id'],
-  isCaseSensitive: false,
-})
 
 // =====================================
 // EMAIL
@@ -113,16 +94,6 @@ export const FLASHCARDS = {
 // DATABASE
 // =====================================
 export const DATABASE = {
-  verses: {
-    all: verses,
-    search: fuseVerses.search.bind(fuseVerses),
-  },
-
-  books: {
-    all: books,
-    search: fuseBooks.search.bind(fuseBooks),
-  },
-
   user: USER,
   flashcards: FLASHCARDS,
 

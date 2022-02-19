@@ -10,17 +10,38 @@ import { Sidebar } from 'src/components/every-layout/sidebar'
 import { Stack } from 'src/components/every-layout/stack'
 import { Icon } from 'src/components/icon'
 import { Navigation } from 'src/components/navigation'
+import { fetchGetJSON } from 'src/helpers/apiHelpers'
 import { useForm } from 'src/helpers/useForm'
 import { DATABASE } from 'src/models/state'
 import { Flashcard, FlashcardSteps } from 'src/types/flashcards'
 import { Id } from 'src/types/id'
 import { Verse, verseTitlePartial } from 'src/types/verse'
+import { VersesRequest, VersesResponse } from '../api/verses'
+import debounce from 'lodash.debounce'
 
 const FlashcardsIndex: NextPage = () => {
   const [form, setForm] = useForm({ search: '' })
   const [flashcards, setFlashcards] = useState(DATABASE.flashcards.flashcards)
+  const [verses, setVerses] = useState<Verse[]>([])
+
+  const search = React.useMemo(
+    () =>
+      debounce((term: string) => {
+        fetchGetJSON<VersesResponse>('/api/verses', {
+          search: term,
+        } as VersesRequest).then((verses) => setVerses(verses || []))
+      }, 500),
+    []
+  )
+
+  React.useEffect(() => {
+    search(form.search)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [form.search])
 
   function addCard(verse: Verse) {
+    setVerses([])
+    setForm('search', '')
     const flashcard: Flashcard = {
       id: Id(),
       history: [],
@@ -46,9 +67,8 @@ const FlashcardsIndex: NextPage = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault()
-              const activeVerse = DATABASE.verses.search(form.search)[0]
-              if (activeVerse?.item) {
-                addCard(activeVerse.item)
+              if (verses[0]) {
+                addCard(verses[0])
               }
             }}>
             <label htmlFor="search">Add Flashcard: </label>
@@ -65,16 +85,13 @@ const FlashcardsIndex: NextPage = () => {
             </Sidebar>
           </form>
 
-          {DATABASE.verses
-            .search(form.search)
-            .slice(0, 5)
-            .map(({ item: verse }) => (
-              <VerseCard
-                verse={verse}
-                key={verse.id}
-                onAdd={() => addCard(verse)}
-              />
-            ))}
+          {verses.map((verse) => (
+            <VerseCard
+              verse={verse}
+              key={verse.id}
+              onAdd={() => addCard(verse)}
+            />
+          ))}
 
           {!form.search.length && (
             <Grid>
