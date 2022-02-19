@@ -29,7 +29,7 @@ export const OptionPage: React.FC<{
       <Center intrinsic>
         <p>
           Add{' '}
-          <Link href="/verses">
+          <Link href="/flashcards">
             <a>verses</a>
           </Link>{' '}
           to get started

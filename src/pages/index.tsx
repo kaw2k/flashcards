@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           <Center intrinsic>
             <p>
               Add{' '}
-              <Link href="/verses">
+              <Link href="/flashcards">
                 <a>verses</a>
               </Link>{' '}
               to get started
@@ -199,7 +199,14 @@ const Home: NextPage = () => {
         .card {
           border: 1px solid var(--black);
           border-radius: 5px;
+          background-color: var(--white);
         }
+
+        .card:hover {
+          color: var(--white);
+          background-color: var(--blackLight);
+        }
+
         .card.selected {
           color: var(--white);
           background-color: var(--black);

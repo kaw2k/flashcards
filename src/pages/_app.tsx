@@ -43,6 +43,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       {loading ? <div>loading</div> : <Component {...pageProps} />}
@@ -70,7 +76,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
 
         * {
-          font-family: 'Avenir', sans-serif;
+          font-family: 'Noto Sans', Avenir, sans-serif;
           box-sizing: border-box;
           margin: 0;
           padding: 0;

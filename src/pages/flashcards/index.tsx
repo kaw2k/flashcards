@@ -67,7 +67,7 @@ const FlashcardsIndex: NextPage = () => {
 
           {DATABASE.verses
             .search(form.search)
-            .slice(0, 10)
+            .slice(0, 5)
             .map(({ item: verse }) => (
               <VerseCard
                 verse={verse}
@@ -99,6 +99,9 @@ const FlashcardCard: React.FC<{
       <Link href={`/flashcards/${flashcard.id}`}>
         <a>
           <Box>
+            {flashcard.verse.anthologyTitle && (
+              <strong>{flashcard.verse.anthologyTitle}</strong>
+            )}
             <strong>{flashcard.verse.bookTitle}</strong>
             <Cluster space="--s2">
               <Cluster noWrap space="--s-5">
@@ -148,13 +151,16 @@ const VerseCard: React.FC<{ verse: Verse; onAdd: () => void }> = ({
 }) => {
   const [added, setAdded] = React.useState(DATABASE.flashcards.hasVerse(verse))
 
+  console.log(verse)
+
   return (
     <div className="root">
       <Box>
         <Center andText>
           <Stack>
             <strong>
-              {verse.bookTitle}: {verse.meta.chapter}.{verse.meta.verse}
+              {verse.anthologyTitle} {verse.bookTitle}: {verse.meta.chapter}.
+              {verse.meta.verse}
             </strong>
             <p>{verse.translation}</p>
           </Stack>

@@ -13,6 +13,7 @@ export interface Verse {
   text: string[] // Sanskrit
   synonyms: string
   anthology?: string
+  anthologyTitle?: string
   book?: string
   bookTitle: string
   translation: string
