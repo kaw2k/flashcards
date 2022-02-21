@@ -39,6 +39,10 @@ export const USER = {
 const FLASHCARD_KEY = 'gita-cards-flashcards'
 let _flashcards: Flashcard[] = []
 export const FLASHCARDS = {
+  flashcard(id: Flashcard['id']) {
+    return this.flashcards.find((f) => f.id === id)
+  },
+
   get flashcards() {
     return _flashcards
   },

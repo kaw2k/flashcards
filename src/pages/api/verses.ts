@@ -3,11 +3,16 @@ import { handleHttpError, validate } from 'src/helpers/apiHelpers'
 import { HttpError } from 'src/helpers/httpError'
 import bg from 'src/bg.json'
 import sb from 'src/sb.json'
+import cc from 'src/cc.json'
 import { Verse } from 'src/types/verse'
 
 import Fuse from 'fuse.js'
 
-const verses: Verse[] = [...bg.verses, ...(sb as any).verses] as any
+const verses: Verse[] = [
+  ...bg.verses,
+  ...(cc as any).verses,
+  ...(sb as any).verses,
+] as any
 
 const fuseVerses = new Fuse(verses, {
   keys: ['id'],

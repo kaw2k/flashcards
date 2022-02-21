@@ -1,7 +1,9 @@
 import React from 'react'
 import { Session } from 'src/helpers/generateSession'
+import { shuffle } from 'src/helpers/shuffle'
 import { DATABASE } from 'src/models/state'
 import {
+  Flashcard,
   FlashcardOptions,
   FlashcardSteps,
   progressCard,
@@ -22,7 +24,7 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
   const currentPrompt = prompts[0]
 
   const next = (option: FlashcardOptions) => () => {
-    DATABASE.flashcards.update({
+    const nextFlashcard: Flashcard = {
       ...currentPrompt.flashcard,
       history: [
         progressCard(
@@ -32,9 +34,24 @@ export const Quiz: React.FC<{ session: Session; onDone(): void }> = ({
         ),
         ...currentPrompt.flashcard.history,
       ],
-    })
+    }
 
-    setPrompts(prompts.slice(1))
+    DATABASE.flashcards.update(nextFlashcard)
+
+    if (option === FlashcardOptions.Again) {
+      const [nextPrompt, ...restPrompts] = prompts
+      setPrompts([
+        nextPrompt,
+        ...shuffle(
+          restPrompts.concat({
+            ...currentPrompt,
+            flashcard: nextFlashcard,
+          })
+        ),
+      ])
+    } else {
+      setPrompts(prompts.slice(1))
+    }
   }
 
   React.useEffect(() => {
