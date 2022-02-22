@@ -4,18 +4,33 @@ import { HttpError } from 'src/helpers/httpError'
 import bg from 'src/bg.json'
 import sb from 'src/sb.json'
 import cc from 'src/cc.json'
+import bs from 'src/bs.json'
 import { Verse } from 'src/types/verse'
 
 import Fuse from 'fuse.js'
 
 const verses: Verse[] = [
-  ...bg.verses,
+  ...(bg as any).verses,
   ...(cc as any).verses,
   ...(sb as any).verses,
+  ...(bs as any).verses,
 ] as any
 
 const fuseVerses = new Fuse(verses, {
-  keys: ['id'],
+  keys: [
+    {
+      name: 'meta.anthologyTitle',
+      weight: 0.35,
+    },
+    {
+      name: 'meta.bookTitle',
+      weight: 0.25,
+    },
+    {
+      name: 'meta.verseId',
+      weight: 1,
+    },
+  ],
   isCaseSensitive: false,
 })
 

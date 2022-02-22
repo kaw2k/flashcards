@@ -77,6 +77,8 @@ const FlashcardsIndex: NextPage = () => {
                 <input
                   placeholder="ie: 18.66..."
                   id="search"
+                  spellCheck={false}
+                  autoComplete="off"
                   value={form.search}
                   onChange={setForm('search')}
                 />
@@ -88,7 +90,7 @@ const FlashcardsIndex: NextPage = () => {
           {verses.map((verse) => (
             <VerseCard
               verse={verse}
-              key={verse.id}
+              key={verse.meta.verseId}
               onAdd={() => addCard(verse)}
             />
           ))}
@@ -116,10 +118,10 @@ const FlashcardCard: React.FC<{
       <Link href={`/flashcards/${flashcard.id}`}>
         <a>
           <Box>
-            {flashcard.verse.anthologyTitle && (
-              <strong>{flashcard.verse.anthologyTitle}</strong>
+            {flashcard.verse.meta.anthologyTitleRaw && (
+              <strong>{flashcard.verse.meta.anthologyTitleRaw}</strong>
             )}
-            <strong>{flashcard.verse.bookTitle}</strong>
+            <strong>{flashcard.verse.meta.bookTitleRaw}</strong>
             <Cluster space="--s2">
               <Cluster noWrap space="--s-5">
                 <Icon icon="book" color="var(--grayLight)" />
@@ -168,16 +170,17 @@ const VerseCard: React.FC<{ verse: Verse; onAdd: () => void }> = ({
 }) => {
   const [added, setAdded] = React.useState(DATABASE.flashcards.hasVerse(verse))
 
-  console.log(verse)
-
   return (
     <div className="root">
       <Box>
         <Center andText>
           <Stack>
             <strong>
-              {verse.anthologyTitle} {verse.bookTitle}: {verse.meta.chapter}.
-              {verse.meta.verse}
+              {verse.meta.anthologyTitleRaw} {verse.meta.bookTitleRaw}:{' '}
+              {verse.meta.chapterNumber
+                ? verse.meta.chapterNumber.concat('.')
+                : ''}
+              {verse.meta.verseNumber}
             </strong>
             <p>{verse.translation}</p>
           </Stack>

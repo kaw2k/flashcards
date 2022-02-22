@@ -72,7 +72,9 @@ export const FLASHCARDS = {
   },
 
   hasVerse(targetVerse: Verse) {
-    return !!this.flashcards.find(({ verse }) => verse.id === targetVerse.id)
+    return !!this.flashcards.find(
+      ({ verse }) => verse.meta.verseId === targetVerse.meta.verseId
+    )
   },
 
   async init(email?: Email) {
