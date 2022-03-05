@@ -40,7 +40,7 @@ export function verseTitlePartial(verse: Verse) {
 }
 
 export function verseTitleFull(verse: Verse) {
-  return `${verse.meta.bookTitleRaw}: ${verse.meta.chapterTitle}.${verse.meta.verseNumber}`
+  return `${verse.meta.bookTitleRaw}: ${verse.meta.chapterNumber}.${verse.meta.verseNumber}`
 }
 
 interface SearchMeta {
