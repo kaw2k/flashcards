@@ -1,0 +1,287 @@
+{
+  "type": "anthology",
+  "anthologyId": "cc",
+  "id": "cc",
+  "anthologyTitle": "Chaitanya Charitamrita",
+  "anthologyTitleRaw": "Caitanya-caritāmṛta",
+  "books": [
+    {
+      "bookId": "cc.adi",
+      "id": "cc.adi",
+      "type": "book",
+      "bookTitle": "Adi-lila",
+      "bookTitleRaw": "Ādi-līlā",
+      "anthologyId": "cc",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Spiritual Masters"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Sri Caitanya Mahaprabhu, the Supreme Personality of Godhead"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "The External Reasons for the Appearance of Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Confidential Reasons for the Appearance of Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "The Glories Of Lord Nityananda Balarama"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Glories of Sri Advaita Acarya"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "Lord Caitanya in Five Features"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "The Author Receives the Orders of Krsna and Guru"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "The Desire Tree of Devotional Service"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Trunk, Branches and Subbranches of the Caitanya Tree"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Expansions of Lord Nityananda"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Expansions of Advaita Acarya and Gadadhara Pandita"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Advent of Lord Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Lord Caitanya’s Childhood Pastimes"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Lord’s Pauganda-lila"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "The Pastimes of the Lord in His Childhood and Youth"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The Pastimes of Lord Caitanya Mahaprabhu in His Youth"
+        }
+      ]
+    },
+    {
+      "bookId": "cc.madhya",
+      "id": "cc.madhya",
+      "type": "book",
+      "bookTitle": "Madhya-lila",
+      "bookTitleRaw": "Madhya-līlā",
+      "anthologyId": "cc",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Later Pastimes of Lord Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Ecstatic Manifestations of Lord Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu’s Stay at the House of Advaita Acarya"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Sri Madhavendra Puri’s Devotional Service"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "The Activities of Saksi-gopala"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Liberation of Sarvabhauma Bhattacarya"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Lord Begins His Tour of South India"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Talks Between Sri Caitanya Mahaprabhu and Ramananda Raya"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu’s Travels to the Holy Places"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Lord’s Return to Jagannatha Puri"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Beda-kirtana Pastimes of Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Cleansing of the Gundica Temple"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Ecstatic Dancing of the Lord at Ratha-yatra"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Performance of the Vrndavana Pastimes"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Lord Accepts Prasadam at the House of Sarvabhauma Bhattacarya"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "The Lord’s Attempt to Go to Vrndavana"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The Lord Travels to Vrndavana"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu’s Visit to Sri Vrndavana"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu Instructs Srila Rupa Gosvami"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu Instructs Sanatana Gosvami in the Science of the Absolute Truth"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "The Opulence and Sweetness of Lord Sri Krsna"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "The Process of Devotional Service"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "Life’s Ultimate Goal — Love of Godhead"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "The Sixty-One Explanations of the Atmarama Verse"
+        },
+        {
+          "chapterNumber": "25",
+          "chapterTitle": "How All the Residents of Varanasi Became Vaisnavas"
+        }
+      ]
+    },
+    {
+      "bookId": "cc.antya",
+      "id": "cc.antya",
+      "type": "book",
+      "bookTitle": "Antya-lila",
+      "bookTitleRaw": "Antya-līlā",
+      "anthologyId": "cc",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "Srila Rupa Gosvami’s Second Meeting with the Lord"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Chastisement of Junior Haridasa"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "The Glories of Srila Haridasa Thakura"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Sanatana Gosvami Visits the Lord at Jagannatha Puri"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "How Pradyumna Misra Received Instructions from Ramananda Raya"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Meeting of Sri Caitanya Mahaprabhu and Raghunatha dasa Gosvami"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Meeting of Sri Caitanya Mahaprabhu and Vallabha Bhatta"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Ramacandra Puri Criticizes the Lord"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "The Deliverance of Gopinatha Pattanayaka"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Sri Caitanya Mahaprabhu Accepts Prasadam from His Devotees"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Passing of Haridasa Thakura"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Loving Dealings Between Lord Sri Caitanya Mahaprabhu and Jagadananda Pandita"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "Pastimes with Jagadananda Pandita and Raghunatha Bhatta Gosvami"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu’s Feelings of Separation from Krsna"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Transcendental Madness of Lord Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "Lord Sri Caitanya Mahaprabhu Tastes Nectar from the Lips of Lord Sri Krsna"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The Bodily Transformations of Lord Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Rescuing the Lord from the Sea"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "The Inconceivable Behavior of Lord Sri Caitanya Mahaprabhu"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "The Siksastaka Prayers"
+        }
+      ]
+    }
+  ]
+}

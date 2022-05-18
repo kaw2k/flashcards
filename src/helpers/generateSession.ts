@@ -2,6 +2,7 @@ import { Icons } from 'src/components/icon'
 import { DATABASE } from 'src/models/state'
 import { Flashcard, FlashcardSteps } from 'src/types/flashcards'
 import { verseTitleFull } from 'src/types/verse'
+import { sample } from './sample'
 import { shuffle } from './shuffle'
 
 export const VariantOptions: {
@@ -89,15 +90,11 @@ export function generateQuizCards(): Flashcard[] {
   const reviewCards = filterCards(FlashcardSteps.Review)
 
   const reviewCardsToShow = Math.max(2, Math.floor(0.33 * reviewCards.length))
-  reviewCards.sort(
-    ({ ease: easeA = 0 }, { ease: easeB = 0 }) =>
-      easeA + Math.random() - (easeB + Math.random())
-  )
 
   return [
     ...shuffle(initialCards),
     ...shuffle(betterCards),
     ...shuffle(greatCards),
-    ...reviewCards.slice(0, reviewCardsToShow),
+    ...sample(reviewCards, reviewCardsToShow),
   ]
 }

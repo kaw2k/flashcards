@@ -43,6 +43,11 @@ export function verseTitleFull(verse: Verse) {
   return `${verse.meta.bookTitleRaw}: ${verse.meta.chapterNumber}.${verse.meta.verseNumber}`
 }
 
+export function verseOldTitleFull(verse: VerseOld) {
+  console.log(verse)
+  return `${verse.book}: ${verse.meta.chapter}.${verse.meta.verse}`
+}
+
 interface SearchMeta {
   verseId: string
   verseNumber: string

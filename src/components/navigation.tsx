@@ -27,6 +27,16 @@ export const Navigation: React.FC = ({}) => {
           <span>flashcards</span>
         </a>
       </Link>
+      <Link href="/explain">
+        <a
+          className={clsx(
+            'nav-item',
+            router.pathname === '/explain' && 'active'
+          )}>
+          <Icon icon="contact_support" />
+          <span>explain</span>
+        </a>
+      </Link>
       <a
         href="#"
         className="nav-item"
