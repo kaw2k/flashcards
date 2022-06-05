@@ -1,7 +1,7 @@
 import React from 'react'
 import { Session } from 'src/helpers/generateSession'
 import { shuffle } from 'src/helpers/shuffle'
-import { DATABASE } from 'src/models/state'
+import { DATABASE } from 'src/state'
 import {
   Flashcard,
   FlashcardOptions,

@@ -8,14 +8,14 @@ import { Navigation } from 'src/components/navigation'
 import { Radio } from 'src/components/radio'
 import { IconButton } from 'src/components/iconButton'
 
-import sbIndex from 'src/sb-index.json'
-import bgIndex from 'src/bg-index.json'
-import ccIndex from 'src/cc-index.json'
-import bsIndex from 'src/bs-index.json'
+import sbIndex from 'src/data/sb-index.json'
+import bgIndex from 'src/data/bg-index.json'
+import ccIndex from 'src/data/cc-index.json'
+import bsIndex from 'src/data/bs-index.json'
 import { Cluster } from 'src/components/every-layout/cluster'
 import { fetchGetJSON } from 'src/helpers/apiHelpers'
 import { ExplainRequest, ExplainResponse } from './api/explain'
-import { DATABASE } from 'src/models/state'
+import { DATABASE } from 'src/state'
 import {
   Verse,
   VerseOld,

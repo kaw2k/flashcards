@@ -1,5 +1,5 @@
 import { Icons } from 'src/components/icon'
-import { DATABASE } from 'src/models/state'
+import { DATABASE } from 'src/state'
 import { Flashcard, FlashcardSteps } from 'src/types/flashcards'
 import { verseTitleFull } from 'src/types/verse'
 import { sample } from './sample'

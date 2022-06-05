@@ -1,0 +1,1469 @@
+{
+  "type": "anthology",
+  "anthologyId": "sb",
+  "id": "sb",
+  "anthologyTitle": "Srimad Bhagavatam",
+  "anthologyTitleRaw": "Śrīmad-Bhāgavatam ",
+  "books": [
+    {
+      "bookId": "sb.1",
+      "id": "sb.1",
+      "type": "book",
+      "bookTitle": "Canto 1: Creation",
+      "bookTitleRaw": "Canto 1: Creation",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "Questions by the Sages"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Divinity and Divine Service"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Krsna Is the Source of All Incarnations"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Appearance of Sri Narada"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Narada’s Instructions on Srimad-Bhagavatam for Vyasadeva"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "Conversation Between Narada and Vyasadeva"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Son of Drona Punished"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Prayers by Queen Kunti and Pariksit Saved"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "The Passing Away of Bhismadeva in the Presence of Lord Krsna"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Departure of Lord Krsna for Dvaraka"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "Lord Krsna’s Entrance into Dvaraka"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "Birth of Emperor Pariksit"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "Dhrtarastra Quits Home"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "The Disappearance of Lord Krsna"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Pandavas Retire Timely"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "How Pariksit Received the Age of Kali"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "Punishment and Reward of Kali"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Maharaja Pariksit Cursed by a Brahmana Boy"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "The Appearance of Sukadeva Gosvami"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.2",
+      "id": "sb.2",
+      "type": "book",
+      "bookTitle": "Canto 2: The Cosmic Manifestation",
+      "bookTitleRaw": "Canto 2: The Cosmic Manifestation",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The First Step in God Realization"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Lord in the Heart"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Pure Devotional Service: The Change in Heart"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Process of Creation"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "The Cause of All Causes"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "Purusa-sukta Confirmed"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "Scheduled Incarnations with Specific Functions"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Questions by King Pariksit"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Answers by Citing the Lord’s Version"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Bhagavatam Is the Answer to All Questions"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.3",
+      "id": "sb.3",
+      "type": "book",
+      "bookTitle": "Canto 3: The Status Quo",
+      "bookTitleRaw": "Canto 3: The Status Quo",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "Questions by Vidura"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Remembrance of Lord Krsna"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "The Lord’s Pastimes Out of Vrndavana"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Vidura Approaches Maitreya"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Vidura’s Talks with Maitreya"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "Creation of the Universal Form"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "Further Inquires by Vidura"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Manifestation of Brahma from Garbhodakasayi Visnu"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Brahma’s Prayers for Creative Energy"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Divisions of the Creation"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "Calculation of Time, from the Atom"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "Creation of the Kumaras and Others"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Appearance of Lord Varaha"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Pregnancy of Diti in the Evening"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "Description of the Kingdom of God"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "The Two Doorkeepers of Vaikuntha, Jaya and Vijaya, Cursed by the Sages"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "Victory of Hiranyaksa Over All the Directions of the Universe"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "The Battle Between Lord Boar and the Demon Hiranyaksa"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "The Killing of the Demon Hiranyaksa"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "Conversation Between Maitreya and Vidura"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "Conversation Between Manu and Kardama"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "The Marriage of Kardama Muni and Devahuti"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "Devahuti’s Lamentation"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "The Renunciation of Kardama Muni"
+        },
+        {
+          "chapterNumber": "25",
+          "chapterTitle": "The Glories of Devotional Service"
+        },
+        {
+          "chapterNumber": "26",
+          "chapterTitle": "Fundamental Principles of Material Nature"
+        },
+        {
+          "chapterNumber": "27",
+          "chapterTitle": "Understanding Material Nature"
+        },
+        {
+          "chapterNumber": "28",
+          "chapterTitle": "Kapila’s Instructions on the Execution of Devotional Service"
+        },
+        {
+          "chapterNumber": "29",
+          "chapterTitle": "Explanation of Devotional Service by Lord Kapila"
+        },
+        {
+          "chapterNumber": "30",
+          "chapterTitle": "Description by Lord Kapila of Adverse Fruitive Activities"
+        },
+        {
+          "chapterNumber": "31",
+          "chapterTitle": "Lord Kapila’s Instructions on the Movements of the Living Entities"
+        },
+        {
+          "chapterNumber": "32",
+          "chapterTitle": "Entanglement in Fruitive Activities"
+        },
+        {
+          "chapterNumber": "33",
+          "chapterTitle": "Activities of Kapila"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.4",
+      "id": "sb.4",
+      "type": "book",
+      "bookTitle": "Canto 4: The Creation of the Fourth Order",
+      "bookTitleRaw": "Canto 4: The Creation of the Fourth Order",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "Genealogical Table of the Daughters of Manu"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Daksa Curses Lord Siva"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Talks Between Lord Siva and Sati"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Sati Quits Her Body"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Frustration of the Sacrifice of Daksa"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "Brahma Satisfies Lord Siva"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Sacrifice Performed by Daksa"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Dhruva Maharaja Leaves Home for the Forest"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Dhruva Maharaja Returns Home"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Dhruva Maharaja’s Fight with the Yaksas"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "Svayambhuva Manu Advises Dhruva Maharaja to Stop Fighting"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "Dhruva Maharaja Goes Back to Godhead"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "Description of the Descendants of Dhruva Maharaja"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "The Story of King Vena"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "King Prthu’s Appearance and Coronation"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "Praise of King Prthu by the Professional Reciters"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "Maharaja Prthu Becomes Angry at the Earth"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Prthu Maharaja Milks the Earth Planet"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "King Prthu’s One Hundred Horse Sacrifices"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "Lord Visnu’s Appearance in the Sacrificial Arena of Maharaja Prthu"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "Instructions by Maharaja Prthu"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "Prthu Maharaja’s Meeting with the Four Kumaras"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "Maharaja Prthu’s Going Back Home"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "Chanting the Song Sung by Lord Siva"
+        },
+        {
+          "chapterNumber": "25",
+          "chapterTitle": "The Descriptions of the Characteristics of King Puranjana"
+        },
+        {
+          "chapterNumber": "26",
+          "chapterTitle": "King Puranjana Goes to the Forest to Hunt, and His Queen Becomes Angry"
+        },
+        {
+          "chapterNumber": "27",
+          "chapterTitle": "Attack by Candavega on the City of King Puranjana; the Character of Kalakanya"
+        },
+        {
+          "chapterNumber": "28",
+          "chapterTitle": "Puranjana Becomes a Woman in the Next Life"
+        },
+        {
+          "chapterNumber": "29",
+          "chapterTitle": "Talks Between Narada and King Pracinabarhi"
+        },
+        {
+          "chapterNumber": "30",
+          "chapterTitle": "The Activities of the Pracetas"
+        },
+        {
+          "chapterNumber": "31",
+          "chapterTitle": "Narada Instructs the Pracetas"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.5",
+      "id": "sb.5",
+      "type": "book",
+      "bookTitle": "Canto 5: The Creative Impetus",
+      "bookTitleRaw": "Canto 5: The Creative Impetus",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Activities of Maharaja Priyavrata"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Activities of Maharaja Agnidhra"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Rsabhadeva’s Appearance in the Womb of Merudevi, the Wife of King Nabhi"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Characteristics of Rsabhadeva, the Supreme Personality of Godhead"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Lord Rsabhadeva’s Teachings to His Sons"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Activities of Lord Rsabhadeva"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Activities of King Bharata"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "A Description of the Character of Bharata Maharaja"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "The Supreme Character of Jada Bharata"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Discussion Between Jada Bharata and Maharaja Rahugana"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "Jada Bharata Instructs King Rahugana"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "Conversation Between Maharaja Rahugana and Jada Bharata"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "Further Talks Between King Rahugana and Jada Bharata"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "The Material World as the Great Forest of Enjoyment"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Glories of the Descendants of King Priyavrata"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "A Description of Jambudvipa"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The Descent of the River Ganges"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "The Prayers Offered to the Lord by the Residents of Jambudvipa"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "A Description of the Island of Jambudvipa"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "Studying the Structure of the Universe"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "The Movements of the Sun"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "The Orbits of the Planets"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "The Sisumara Planetary Systems"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "The Subterranean Heavenly Planets"
+        },
+        {
+          "chapterNumber": "25",
+          "chapterTitle": "The Glories of Lord Ananta"
+        },
+        {
+          "chapterNumber": "26",
+          "chapterTitle": "A Description of the Hellish Planets"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.6",
+      "id": "sb.6",
+      "type": "book",
+      "bookTitle": "Canto 6: Prescribed Duties for Mankind",
+      "bookTitleRaw": "Canto 6: Prescribed Duties for Mankind",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The History of the Life of Ajamila"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Ajamila Delivered by the Visnudutas"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Yamaraja Instructs His Messengers"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Hamsa-guhya Prayers Offered to the Lord by Prajapati Daksa"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Narada Muni Cursed by Prajapati Daksa"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Progeny of the Daughters of Daksa"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "Indra Offends His Spiritual Master, Brhaspati."
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "The Narayana-kavaca Shield"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Appearance of the Demon Vrtrasura"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Battle Between the Demigods and Vrtrasura"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Transcendental Qualities of Vrtrasura"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "Vrtrasura’s Glorious Death"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "King Indra Afflicted by Sinful Reaction"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "King Citraketu’s Lamentation"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Saints Narada and Angira Instruct King Citraketu"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "King Citraketu Meets the Supreme Lord"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "Mother Parvati Curses Citraketu"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Diti Vows to Kill King Indra"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "Performing the Pumsavana Ritualistic Ceremony"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.7",
+      "id": "sb.7",
+      "type": "book",
+      "bookTitle": "Canto 7: The Science of God",
+      "bookTitleRaw": "Canto 7: The Science of God",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Supreme Lord Is Equal to Everyone"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Hiranyakasipu, King of the Demons"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Hiranyakasipu’s Plan to Become Immortal"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Hiranyakasipu Terrorizes the Universe"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Prahlada Maharaja, the Saintly Son of Hiranyakasipu"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "Prahlada Instructs His Demoniac Schoolmates"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "What Prahlada Learned in the Womb"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Lord Nrsimhadeva Slays the King of the Demons"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Prahlada Pacifies Lord Nrsimhadeva with Prayers"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Prahlada, the Best Among Exalted Devotees"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Perfect Society: Four Social Classes"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Perfect Society: Four Spiritual Classes"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Behavior of a Perfect Person"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Ideal Family Life"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "Instructions for Civilized Human Beings"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.8",
+      "id": "sb.8",
+      "type": "book",
+      "bookTitle": "Canto 8: Withdrawal of the Cosmic Creations",
+      "bookTitleRaw": "Canto 8: Withdrawal of the Cosmic Creations",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Manus, Administrators of the Universe"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Elephant Gajendra’s Crisis"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Gajendra’s Prayers of Surrender"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Gajendra Returns to the Spiritual World"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "The Demigods Appeal to the Lord for Protection"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Demigods and Demons Declare a Truce"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "Lord Siva Saves the Universe by Drinking Poison"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "The Churning of the Milk Ocean"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "The Lord Incarnates as Mohini-Murti"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Battle Between the Demigods and the Demons"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "King Indra Annihilates the Demons"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Mohini-murti Incarnation Bewilders Lord Siva"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "Description of Future Manus"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "The System of Universal Management"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "Bali Maharaja Conquers the Heavenly Planets"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "Executing the Payo-vrata Process of Worship"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The Supreme Lord Agrees to Become Aditi’s Son"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Lord Vamanadeva, the Dwarf Incarnation"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "Lord Vamanadeva Begs Charity from Bali Maharaja"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "Bali Maharaja Surrenders the Universe"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "Bali Maharaja Arrested by the Lord"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "Bali Maharaja Surrenders His Life"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "The Demigods Regain the Heavenly Planets"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "Matsya, the Lord’s Fish Incarnation"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.9",
+      "id": "sb.9",
+      "type": "book",
+      "bookTitle": "Canto 9: Liberation",
+      "bookTitleRaw": "Canto 9: Liberation",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "King Sudyumna Becomes a Woman"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Dynasties of the Sons of Manu"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "The Marriage of Sukanya and Cyavana Muni"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Ambarisa Maharaja Offended by Durvasa Muni"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Durvasa Muni’s Life Spared"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Downfall of Saubhari Muni"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Descendants of King Mandhata"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "The Sons of Sagara Meet Lord Kapiladeva"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "The Dynasty of Amsuman"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Pastimes of the Supreme Lord, Ramacandra"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "Lord Ramacandra Rules the World"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Dynasty of Kusa, the Son of Lord Ramacandra"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Dynasty of Maharaja Nimi"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "King Pururava Enchanted by Urvasi"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "Parasurama, the Lord’s Warrior Incarnation"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "Lord Parasurama Destroys the World’s Ruling Class"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The Dynasties of the Sons of Pururava"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "King Yayati Regains His Youth"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "King Yayati Achieves Liberation"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "The Dynasty of Puru"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "The Dynasty of Bharata"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "The Descendants of Ajamidha"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "The Dynasties of the Sons of Yayati"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "Krsna, the Supreme Personality of Godhead"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.10",
+      "id": "sb.10",
+      "type": "book",
+      "bookTitle": "Canto 10: The Summum Bonum",
+      "bookTitleRaw": "Canto 10: The Summum Bonum",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Advent of Lord Krsna: Introduction"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Prayers by the Demigods for Lord Krsna in the Womb"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "The Birth of Lord Krsna"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Atrocities of King Kamsa"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "The Meeting of Nanda Maharaja and Vasudeva"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Killing of the Demon Putana"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Killing of the Demon Trnavarta"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Lord Krsna Shows the Universal Form Within His Mouth"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Mother Yasoda Binds Lord Krsna"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Deliverance of the Yamala-arjuna Trees"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Childhood Pastimes of Krsna"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Killing of the Demon Aghasura"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Stealing of the Boys and Calves by Brahma"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Brahma’s Prayers to Lord Krsna"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "The Killing of Dhenuka, the Ass Demon"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "Krsna Chastises the Serpent Kaliya"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "The History of Kaliya"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Lord Balarama Slays the Demon Pralamba"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "Swallowing the Forest Fire"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "The Rainy Season and Autumn in Vrndavana"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "The Gopis Glorify the Song of Krsna’s Flute"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "Krsna Steals the Garments of the Unmarried Gopis"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "The Brahmanas’ Wives Blessed"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "Worshiping Govardhana Hill"
+        },
+        {
+          "chapterNumber": "25",
+          "chapterTitle": "Lord Krsna Lifts Govardhana Hill"
+        },
+        {
+          "chapterNumber": "26",
+          "chapterTitle": "Wonderful Krsna"
+        },
+        {
+          "chapterNumber": "27",
+          "chapterTitle": "Lord Indra and Mother Surabhi Offer Prayers"
+        },
+        {
+          "chapterNumber": "28",
+          "chapterTitle": "Krsna Rescues Nanda Maharaja from the Abode of Varuna"
+        },
+        {
+          "chapterNumber": "29",
+          "chapterTitle": "Krsna and the Gopis Meet for the Rasa Dance"
+        },
+        {
+          "chapterNumber": "30",
+          "chapterTitle": "The Gopis Search for Krsna"
+        },
+        {
+          "chapterNumber": "31",
+          "chapterTitle": "The Gopis’ Songs of Separation"
+        },
+        {
+          "chapterNumber": "32",
+          "chapterTitle": "The Reunion"
+        },
+        {
+          "chapterNumber": "33",
+          "chapterTitle": "The Rasa Dance"
+        },
+        {
+          "chapterNumber": "34",
+          "chapterTitle": "Nanda Maharaja Saved and Sankhacuda Slain"
+        },
+        {
+          "chapterNumber": "35",
+          "chapterTitle": "The Gopis Sing of Krsna as He Wanders in the Forest"
+        },
+        {
+          "chapterNumber": "36",
+          "chapterTitle": "The Slaying of Arista, the Bull Demon"
+        },
+        {
+          "chapterNumber": "37",
+          "chapterTitle": "The Killing of the Demons Kesi and Vyoma"
+        },
+        {
+          "chapterNumber": "38",
+          "chapterTitle": "Akrura’s Arrival in Vrndavana"
+        },
+        {
+          "chapterNumber": "39",
+          "chapterTitle": "Akrura’s Vision"
+        },
+        {
+          "chapterNumber": "40",
+          "chapterTitle": "The Prayers of Akrura"
+        },
+        {
+          "chapterNumber": "41",
+          "chapterTitle": "Krsna and Balarama Enter Mathura"
+        },
+        {
+          "chapterNumber": "42",
+          "chapterTitle": "The Breaking of the Sacrificial Bow"
+        },
+        {
+          "chapterNumber": "43",
+          "chapterTitle": "Krsna Kills the Elephant Kuvalayapida"
+        },
+        {
+          "chapterNumber": "44",
+          "chapterTitle": "The Killing of Kamsa"
+        },
+        {
+          "chapterNumber": "45",
+          "chapterTitle": "Krsna Rescues His Teacher’s Son"
+        },
+        {
+          "chapterNumber": "46",
+          "chapterTitle": "Uddhava Visits Vrndavana"
+        },
+        {
+          "chapterNumber": "47",
+          "chapterTitle": "The Song of the Bee"
+        },
+        {
+          "chapterNumber": "48",
+          "chapterTitle": "Krsna Pleases His Devotees"
+        },
+        {
+          "chapterNumber": "49",
+          "chapterTitle": "Akrura’s Mission in Hastinapura"
+        },
+        {
+          "chapterNumber": "50",
+          "chapterTitle": "Krsna Establishes the City of Dvaraka"
+        },
+        {
+          "chapterNumber": "51",
+          "chapterTitle": "The Deliverance of Mucukunda"
+        },
+        {
+          "chapterNumber": "52",
+          "chapterTitle": "Rukmini’s Message to Lord Krsna"
+        },
+        {
+          "chapterNumber": "53",
+          "chapterTitle": "Krsna Kidnaps Rukmini"
+        },
+        {
+          "chapterNumber": "54",
+          "chapterTitle": "The Marriage of Krsna and Rukmini"
+        },
+        {
+          "chapterNumber": "55",
+          "chapterTitle": "The History of Pradyumna"
+        },
+        {
+          "chapterNumber": "56",
+          "chapterTitle": "The Syamantaka Jewel"
+        },
+        {
+          "chapterNumber": "57",
+          "chapterTitle": "Satrajit Murdered, the Jewel Returned"
+        },
+        {
+          "chapterNumber": "58",
+          "chapterTitle": "Krsna Marries Five Princesses"
+        },
+        {
+          "chapterNumber": "59",
+          "chapterTitle": "The Killing of the Demon Naraka"
+        },
+        {
+          "chapterNumber": "60",
+          "chapterTitle": "Lord Krsna Teases Queen Rukmini."
+        },
+        {
+          "chapterNumber": "61",
+          "chapterTitle": "Lord Balarama Slays Rukmi"
+        },
+        {
+          "chapterNumber": "62",
+          "chapterTitle": "The Meeting of Usa and Aniruddha"
+        },
+        {
+          "chapterNumber": "63",
+          "chapterTitle": "Lord Krsna Fights with Banasura"
+        },
+        {
+          "chapterNumber": "64",
+          "chapterTitle": "The Deliverance of King Nrga"
+        },
+        {
+          "chapterNumber": "65",
+          "chapterTitle": "Lord Balarama Visits Vrndavana"
+        },
+        {
+          "chapterNumber": "66",
+          "chapterTitle": "Paundraka, the False Vasudeva"
+        },
+        {
+          "chapterNumber": "67",
+          "chapterTitle": "Lord Balarama Slays Dvivida Gorilla"
+        },
+        {
+          "chapterNumber": "68",
+          "chapterTitle": "The Marriage of Samba"
+        },
+        {
+          "chapterNumber": "69",
+          "chapterTitle": "Narada Muni Visits Lord Krsna’s Palaces in Dvaraka"
+        },
+        {
+          "chapterNumber": "70",
+          "chapterTitle": "Lord Krsna’s Daily Activities"
+        },
+        {
+          "chapterNumber": "71",
+          "chapterTitle": "The Lord Travels to Indraprastha"
+        },
+        {
+          "chapterNumber": "72",
+          "chapterTitle": "The Slaying of the Demon Jarasandha"
+        },
+        {
+          "chapterNumber": "73",
+          "chapterTitle": "Lord Krsna Blesses the Liberated Kings"
+        },
+        {
+          "chapterNumber": "74",
+          "chapterTitle": "The Deliverance of Sisupala at the Rajasuya Sacrifice"
+        },
+        {
+          "chapterNumber": "75",
+          "chapterTitle": "Duryodhana Humiliated"
+        },
+        {
+          "chapterNumber": "76",
+          "chapterTitle": "The Battle Between Salva and the Vrsnis"
+        },
+        {
+          "chapterNumber": "77",
+          "chapterTitle": "Lord Krsna Slays the Demon Salva"
+        },
+        {
+          "chapterNumber": "78",
+          "chapterTitle": "The Killing of Dantavakra, Viduratha and Romaharsana"
+        },
+        {
+          "chapterNumber": "79",
+          "chapterTitle": "Lord Balarama Goes on Pilgrimage"
+        },
+        {
+          "chapterNumber": "80",
+          "chapterTitle": "The Brahmana Sudama Visits Lord Krsna in Dvaraka"
+        },
+        {
+          "chapterNumber": "81",
+          "chapterTitle": "The Lord Blesses Sudama Brahmana"
+        },
+        {
+          "chapterNumber": "82",
+          "chapterTitle": "Krsna and Balarama Meet the Inhabitants of Vrndavana"
+        },
+        {
+          "chapterNumber": "83",
+          "chapterTitle": "Draupadi Meets the Queens of Krsna"
+        },
+        {
+          "chapterNumber": "84",
+          "chapterTitle": "The Sages’ Teachings at Kuruksetra"
+        },
+        {
+          "chapterNumber": "85",
+          "chapterTitle": "Lord Krsna Instructs Vasudeva and Retrieves Devaki’s Sons"
+        },
+        {
+          "chapterNumber": "86",
+          "chapterTitle": "Arjuna Kidnaps Subhadra, and Krsna Blesses His Devotees"
+        },
+        {
+          "chapterNumber": "87",
+          "chapterTitle": "The Prayers of the Personified Vedas"
+        },
+        {
+          "chapterNumber": "88",
+          "chapterTitle": "Lord Siva Saved from Vrkasura"
+        },
+        {
+          "chapterNumber": "89",
+          "chapterTitle": "Krsna and Arjuna Retrieve a Brahmana’s Sons"
+        },
+        {
+          "chapterNumber": "90",
+          "chapterTitle": "Summary of Lord Krsna’s Glories"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.11",
+      "id": "sb.11",
+      "type": "book",
+      "bookTitle": "Canto 11: General History",
+      "bookTitleRaw": "Canto 11: General History",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Curse upon the Yadu Dynasty"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "Maharaja Nimi Meets the Nine Yogendras"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "Liberation from the Illusory Energy"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "Drumila Explains the Incarnations of Godhead to King Nimi"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Narada Concludes His Teachings to Vasudeva"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "The Yadu Dynasty Retires to Prabhasa"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "Lord Krsna Instructs Uddhava"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "The Story of Pingala"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Detachment from All that Is Material"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "The Nature of Fruitive Activity"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "The Symptoms of Conditioned and Liberated Living Entities"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "Beyond Renunciation and Knowledge"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Hamsa-avatara Answers the Questions of the Sons of Brahma"
+        },
+        {
+          "chapterNumber": "14",
+          "chapterTitle": "Lord Krsna Explains the Yoga System to Sri Uddhava"
+        },
+        {
+          "chapterNumber": "15",
+          "chapterTitle": "Lord Krsna’s Description of Mystic Yoga Perfections"
+        },
+        {
+          "chapterNumber": "16",
+          "chapterTitle": "The Lord’s Opulence"
+        },
+        {
+          "chapterNumber": "17",
+          "chapterTitle": "Lord Krsna’s Description of the Varnasrama System"
+        },
+        {
+          "chapterNumber": "18",
+          "chapterTitle": "Description of Varnasrama-dharma"
+        },
+        {
+          "chapterNumber": "19",
+          "chapterTitle": "The Perfection of Spiritual Knowledge"
+        },
+        {
+          "chapterNumber": "20",
+          "chapterTitle": "Pure Devotional Service Surpasses Knowledge and Detachment"
+        },
+        {
+          "chapterNumber": "21",
+          "chapterTitle": "Lord Krsna’s Explanation of the Vedic Path"
+        },
+        {
+          "chapterNumber": "22",
+          "chapterTitle": "Enumeration of the Elements of Material Creation"
+        },
+        {
+          "chapterNumber": "23",
+          "chapterTitle": "The Song of the Avanti Brahmana"
+        },
+        {
+          "chapterNumber": "24",
+          "chapterTitle": "The Philosophy of Sankhya"
+        },
+        {
+          "chapterNumber": "25",
+          "chapterTitle": "The Three Modes of Nature and Beyond"
+        },
+        {
+          "chapterNumber": "26",
+          "chapterTitle": "The Aila-gita"
+        },
+        {
+          "chapterNumber": "27",
+          "chapterTitle": "Lord Krsna’s Instructions on the Process of Deity Worship"
+        },
+        {
+          "chapterNumber": "28",
+          "chapterTitle": "Jnana-yoga"
+        },
+        {
+          "chapterNumber": "29",
+          "chapterTitle": "Bhakti-yoga"
+        },
+        {
+          "chapterNumber": "30",
+          "chapterTitle": "The Disappearance of the Yadu Dynasty"
+        },
+        {
+          "chapterNumber": "31",
+          "chapterTitle": "The Disappearance of Lord Sri Krsna"
+        }
+      ]
+    },
+    {
+      "bookId": "sb.12",
+      "id": "sb.12",
+      "type": "book",
+      "bookTitle": "Canto 12: The Age of Deterioration",
+      "bookTitleRaw": "Canto 12: The Age of Deterioration",
+      "anthologyId": "sb",
+      "chapters": [
+        {
+          "chapterNumber": "1",
+          "chapterTitle": "The Degraded Dynasties of Kali-yuga"
+        },
+        {
+          "chapterNumber": "2",
+          "chapterTitle": "The Symptoms of Kali-yuga"
+        },
+        {
+          "chapterNumber": "3",
+          "chapterTitle": "The Bhumi-gita"
+        },
+        {
+          "chapterNumber": "4",
+          "chapterTitle": "The Four Categories of Universal Annihilation"
+        },
+        {
+          "chapterNumber": "5",
+          "chapterTitle": "Sukadeva Gosvami’s Final Instructions to Maharaja Pariksit"
+        },
+        {
+          "chapterNumber": "6",
+          "chapterTitle": "Maharaja Pariksit Passes Away"
+        },
+        {
+          "chapterNumber": "7",
+          "chapterTitle": "The Puranic Literatures"
+        },
+        {
+          "chapterNumber": "8",
+          "chapterTitle": "Markandeya’s Prayers to Nara-Narayana Rsi"
+        },
+        {
+          "chapterNumber": "9",
+          "chapterTitle": "Markandeya Rsi Sees the Illusory Potency of the Lord"
+        },
+        {
+          "chapterNumber": "10",
+          "chapterTitle": "Lord Siva and Uma Glorify Markandeya Rsi"
+        },
+        {
+          "chapterNumber": "11",
+          "chapterTitle": "Summary Description of the Mahapurusa"
+        },
+        {
+          "chapterNumber": "12",
+          "chapterTitle": "The Topics of Srimad-Bhagavatam Summarized"
+        },
+        {
+          "chapterNumber": "13",
+          "chapterTitle": "The Glories of Srimad-Bhagavatam"
+        }
+      ]
+    }
+  ]
+}

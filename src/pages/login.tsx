@@ -5,7 +5,7 @@ import { Center } from 'src/components/every-layout/center'
 import { Cover, CoverPrimary } from 'src/components/every-layout/cover'
 import { Sidebar } from 'src/components/every-layout/sidebar'
 import { useForm } from 'src/helpers/useForm'
-import { DATABASE } from 'src/models/state'
+import { DATABASE } from 'src/state'
 import { Email } from 'src/types/email'
 
 const Home: NextPage = () => {

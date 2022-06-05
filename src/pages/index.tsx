@@ -6,7 +6,7 @@ import {
   VariantOptions,
 } from 'src/helpers/generateSession'
 import { useForm } from 'src/helpers/useForm'
-import { DATABASE } from 'src/models/state'
+import { DATABASE } from 'src/state'
 import { verseTitlePartial } from 'src/types/verse'
 import { Checkbox } from '../components/checkbox'
 import type { NextPage } from 'next'
